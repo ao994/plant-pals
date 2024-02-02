@@ -90,6 +90,6 @@ For each interview, report:
 #### Assessment: Must have / Nice to have / Don’t care (how the interviewee sees the solution)
 - Grading criteria (15 points): You should have at least the required number of interviews. For each interview, you should report the required information. The insight should be grounded on the interview and illustrated by the representative quotes. 
 
-# Final value proposition and consumer segments: 
+## Final value proposition and consumer segments: 
 report the refined versions of these elements (the ones that you reached after the interviews). 
 - Grading criteria (5 points): There must be a connection between the key insights of the interviews and the refinement of the value proposition and customer segments previously presented. See also criteria for Section 2 of this document.
