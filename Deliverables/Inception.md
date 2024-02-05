@@ -136,11 +136,20 @@ When asked if he was interested in caring for plants, Nathan responded with “n
 
 
 ### **7. Interviewee Name # 7**
+Andrew Ortega interviewed Jordan Aragon
 #### When they were interviewed
+2/4/24 
 #### Customer segment
+Male
 #### Key insights from the interview
+Jordan likes to look at flowers anytime he visits Trader Joes, Target or any store that sells flowers.  He used to live in Hawaii so he likes flowers that have large pedals and vibrant colors.  He wants to be able to know how to take care of different plants because he wants to be able to have a garden when he owns his own house.  
 #### Representative quotes
+When asked about plants, Jordan responded “I love plants.  I have a tulip that has been blossoming recently.  I have pictures of it blossoming, do you want to see?”
 #### Assessment: Must have / Nice to have / Don’t care (how the interviewee sees the solution)
+	Discussion board: Must have
+	Searchable plant care database: Must have
+	User accounts: Must have
+	Plant portfolios for user accounts: Must have
 
 
 ### **8. Interviewee Name # 8**
