@@ -153,12 +153,20 @@ When asked about plants, Jordan responded “I love plants.  I have a tulip that
 
 
 ### **8. Interviewee Name # 8**
+Andrew Ortega interviewed Linda Ortega
 #### When they were interviewed
+2/5/24
 #### Customer segment
+Feamle, gardener
 #### Key insights from the interview
+Linda likes to garden in her free time and prune her rose bushes.  She also likes to visit different flower nurseries to see what plants she wants to plant in her yard. She would use the application as a main source of her information on how to keep a better record of her plants and what different care each require. 
 #### Representative quotes
+When asked about the care for plants, she listed that she needs, "help with propogation, what type of fertilizer is best for a plant, how to prevent the plant from being diseased, and how to tend to the insects that will be on the plant."
 #### Assessment: Must have / Nice to have / Don’t care (how the interviewee sees the solution)
-
+	Discussion board: Must have
+	Searchable plant care database: Must have
+	User accounts: Must have
+	Plant portfolios for user accounts: Must have
 
 ### 9. Interviewee Name # 9
 #### When they were interviewed
