@@ -23,7 +23,7 @@ ii) The intended consumer segment for this project is anyone who has a houseplan
 Present the results of each interview (the minimum number of interviews is 1.5 * the number of participants in the group). 
 For each interview, report:
 
-### **1. Interviewee Name # 1** 
+### **1. Jenna Sterry** 
 Haley Kloss interviewed Jenna Sterry
 #### When they were interviewed
 2/2/24
@@ -42,7 +42,7 @@ Fun fact she learned about the best way to water hydrangeas: “It’s best to d
 	Plant portfolios for user accounts: Don’t care
 
 
-### **2. Interviewee Name # 2**
+### **2. Jolie Bushie**
 Haley Kloss interviewed Jolie Bushie
 #### When they were interviewed
 2/2/24 
@@ -61,7 +61,7 @@ On why she doesn’t often research plants: “Not exactly, ‘cus it’s not li
 	Plant portfolios for user accounts: Don’t care
 
 
-### **3. Interviewee Name # 3**
+### **3. Audra Nichlos**
 Haley Berger interviewed Audra Nichlos
 #### When they were interviewed
 2/2/2024
@@ -79,7 +79,7 @@ On if having information would be useful: “Not really, the information was pas
 	Plant portfolios for user accounts: Nice to have
 
 
-### **4. Interviewee Name # 4**
+### **4. Tirra Shawcroft**
 Haley Kloss interviewed Tirra Shawcroft
 #### When they were interviewed
 2/2/24 
@@ -100,7 +100,7 @@ On using websites as a guest vs. a user:  “I think it’s easier to be anonymo
 	Plant portfolios for user accounts: Don’t Care
 
 
-### **4. Interviewee Name # 5**
+### **5. Faith Cook**
 Haley Berger interviewed Faith Cook
 #### When they were interviewed
 2/3/24
@@ -118,7 +118,7 @@ When talking about discussion boards in general, “I find that the internet can
 	Plant portfolios for user accounts: Nice to have
 
 
-### **6. Interviewee Name # 6**
+### **6. Nathan Kaufman**
 Alex King interviewed Nathan Kaufman
 #### When they were interviewed
 2/4/24 
@@ -135,7 +135,7 @@ When asked if he was interested in caring for plants, Nathan responded with “n
 	Plant portfolios for user accounts: Don’t care
 
 
-### **7. Interviewee Name # 7**
+### **7. Jordan Aragon**
 Andrew Ortega interviewed Jordan Aragon
 #### When they were interviewed
 2/4/24 
@@ -168,12 +168,23 @@ When asked about the care for plants, she listed that she needs, "help with prop
 	User accounts: Must have
 	Plant portfolios for user accounts: Must have
 
-### 9. Interviewee Name # 9
+
+### **9. Justin Wilbanks**
+Alyssa Ortiz interviewed Justin Wilbanks
 #### When they were interviewed
+2/5/24
 #### Customer segment
+beginner, gardener, male
 #### Key insights from the interview
+Justin is an amateur gardener, who does not have extensive history with taking care of plants. He gardens mainly to produce fruits and vegetables to eat, and has trouble figuring out when to plant and when to harvest. He noted that he would heavily use the plant lookup database, and otherwise use the app once a week for other purposes. He would be interested in location-specific data for telling users which planting “zone” they are in, as he finds it difficult to find that information on his own.
 #### Representative quotes
+About favorite feature: “My favorite feature would definitely be the searchable database.”
+When asked about what feature they would want the most: “I would want it to use location data that can give recommendations based on your zone.”
 #### Assessment: Must have / Nice to have / Don’t care (how the interviewee sees the solution)
+	Discussion board: nice to have
+	Searchable plant care database: must have
+	User accounts: nice to have
+	Plant portfolios for user accounts: nice to have
 - Grading criteria (15 points): You should have at least the required number of interviews. For each interview, you should report the required information. The insight should be grounded on the interview and illustrated by the representative quotes. 
 
 ## Final value proposition and consumer segments: 
