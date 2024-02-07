@@ -23,7 +23,7 @@ ii) The intended consumer segment for this project is anyone who has a houseplan
 Present the results of each interview (the minimum number of interviews is 1.5 * the number of participants in the group). 
 For each interview, report:
 
-### **1. Interviewee Name # 1** 
+### **1. Jenna Sterry** 
 Haley Kloss interviewed Jenna Sterry
 #### When they were interviewed
 2/2/24
@@ -42,7 +42,7 @@ Fun fact she learned about the best way to water hydrangeas: “It’s best to d
 	Plant portfolios for user accounts: Don’t care
 
 
-### **2. Interviewee Name # 2**
+### **2. Jolie Bushie**
 Haley Kloss interviewed Jolie Bushie
 #### When they were interviewed
 2/2/24 
@@ -61,7 +61,7 @@ On why she doesn’t often research plants: “Not exactly, ‘cus it’s not li
 	Plant portfolios for user accounts: Don’t care
 
 
-### **3. Interviewee Name # 3**
+### **3. Audra Nichlos**
 Haley Berger interviewed Audra Nichlos
 #### When they were interviewed
 2/2/2024
@@ -79,7 +79,7 @@ On if having information would be useful: “Not really, the information was pas
 	Plant portfolios for user accounts: Nice to have
 
 
-### **4. Interviewee Name # 4**
+### **4. Tirra Shawcroft**
 Haley Kloss interviewed Tirra Shawcroft
 #### When they were interviewed
 2/2/24 
@@ -100,7 +100,7 @@ On using websites as a guest vs. a user:  “I think it’s easier to be anonymo
 	Plant portfolios for user accounts: Don’t Care
 
 
-### **4. Interviewee Name # 5**
+### **5. Faith Cook**
 Haley Berger interviewed Faith Cook
 #### When they were interviewed
 2/3/24
@@ -118,7 +118,7 @@ When talking about discussion boards in general, “I find that the internet can
 	Plant portfolios for user accounts: Nice to have
 
 
-### **6. Interviewee Name # 6**
+### **6. Nathan Kaufman**
 Alex King interviewed Nathan Kaufman
 #### When they were interviewed
 2/4/24 
@@ -135,7 +135,7 @@ When asked if he was interested in caring for plants, Nathan responded with “n
 	Plant portfolios for user accounts: Don’t care
 
 
-### **7. Interviewee Name # 7**
+### **7. Jordan Aragon**
 Andrew Ortega interviewed Jordan Aragon
 #### When they were interviewed
 2/4/24 
@@ -153,6 +153,23 @@ When asked about plants, Jordan responded “I love plants.  I have a tulip that
 
 
 ### **8. Interviewee Name # 8**
+Andrew Ortega interviewed Linda Ortega
+#### When they were interviewed
+2/5/24
+#### Customer segment
+Feamle, gardener
+#### Key insights from the interview
+Linda likes to garden in her free time and prune her rose bushes.  She also likes to visit different flower nurseries to see what plants she wants to plant in her yard. She would use the application as a main source of her information on how to keep a better record of her plants and what different care each require. 
+#### Representative quotes
+When asked about the care for plants, she listed that she needs, "help with propogation, what type of fertilizer is best for a plant, how to prevent the plant from being diseased, and how to tend to the insects that will be on the plant."
+#### Assessment: Must have / Nice to have / Don’t care (how the interviewee sees the solution)
+	Discussion board: Must have
+	Searchable plant care database: Must have
+	User accounts: Must have
+	Plant portfolios for user accounts: Must have
+
+
+### **9. Justin Wilbanks**
 Alyssa Ortiz interviewed Justin Wilbanks
 #### When they were interviewed
 2/5/24
@@ -168,14 +185,6 @@ When asked about what feature they would want the most: “I would want it to us
 	Searchable plant care database: must have
 	User accounts: nice to have
 	Plant portfolios for user accounts: nice to have
-
-
-### 9. Interviewee Name # 9
-#### When they were interviewed
-#### Customer segment
-#### Key insights from the interview
-#### Representative quotes
-#### Assessment: Must have / Nice to have / Don’t care (how the interviewee sees the solution)
 - Grading criteria (15 points): You should have at least the required number of interviews. For each interview, you should report the required information. The insight should be grounded on the interview and illustrated by the representative quotes. 
 
 ## Final value proposition and consumer segments: 
