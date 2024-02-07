@@ -153,11 +153,21 @@ When asked about plants, Jordan responded “I love plants.  I have a tulip that
 
 
 ### **8. Interviewee Name # 8**
+Alyssa Ortiz interviewed Justin Wilbanks
 #### When they were interviewed
+2/5/24
 #### Customer segment
+beginner, gardener, male
 #### Key insights from the interview
+Justin is an amateur gardener, who does not have extensive history with taking care of plants. He gardens mainly to produce fruits and vegetables to eat, and has trouble figuring out when to plant and when to harvest. He noted that he would heavily use the plant lookup database, and otherwise use the app once a week for other purposes. He would be interested in location-specific data for telling users which planting “zone” they are in, as he finds it difficult to find that information on his own.
 #### Representative quotes
+About favorite feature: “My favorite feature would definitely be the searchable database.”
+When asked about what feature they would want the most: “I would want it to use location data that can give recommendations based on your zone.”
 #### Assessment: Must have / Nice to have / Don’t care (how the interviewee sees the solution)
+	Discussion board: nice to have
+	Searchable plant care database: must have
+	User accounts: nice to have
+	Plant portfolios for user accounts: nice to have
 
 
 ### 9. Interviewee Name # 9
