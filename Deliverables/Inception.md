@@ -152,7 +152,7 @@ When asked about plants, Jordan responded “I love plants.  I have a tulip that
 	Plant portfolios for user accounts: Must have
 
 
-### **8. Interviewee Name # 8**
+### **8. Susan Broda**
 Karissa Smallwood interviewed Susan Broda
 #### When they were interviewed
 2/7/24
