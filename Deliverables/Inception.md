@@ -153,12 +153,20 @@ When asked about plants, Jordan responded “I love plants.  I have a tulip that
 
 
 ### **8. Interviewee Name # 8**
+Karissa Smallwood interviewed Susan Broda
 #### When they were interviewed
+2/7/24
 #### Customer segment
+female, has plants, very knowledgeable
 #### Key insights from the interview
+She said having an app at the beginning of your plant journey would be very useful. She also doesn't care for user accounts as well. Overall having an app that could possibly help when her plants are dying is very useful.
 #### Representative quotes
+“I love plants, they are very fun to have and take care of”
 #### Assessment: Must have / Nice to have / Don’t care (how the interviewee sees the solution)
-
+	Discussion board: Nice to have
+	Searchable plant care database: Nice to have
+	User accounts: Don't care
+	Plant portfolios for user accounts: Nice to have
 
 ### 9. Interviewee Name # 9
 #### When they were interviewed
