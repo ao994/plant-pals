@@ -1,6 +1,6 @@
 # Project Inception
 *Group 2 - "[Plant Pals]"
-Group Members:
+Group Members: Haley Berger, Haley Kloss, Alex King, Andrew Ortega, Karissa Smallwood
 
 ## 1) Introduction:
 Welcome to Plant Pals, a hub for all things green!
