@@ -1,29 +1,21 @@
 # Project Inception
 *Group 2 - "[Plant Pals]"
-Group Members:
+Group Members: Haley Berger, Haley Kloss, Alex King, Andrew Ortega, Karissa Smallwood
 
 ## 1) Introduction:
 Welcome to Plant Pals, a hub for all things green!
 
 Plant Pals is built to act as a resource for plant enthusiasts looking for information, a community, and a platform that ties both together. Hosting a searchable database for plants, Plant Pals aims to make it easier for plant lovers to get the information they need about how to care for their green friends. From general care to more specific details, Plant Pals aims to provide all the information a user could ask for. Plant Pals also hosts a community hub for enthusiasts to share their love of plants or to ask questions. Plant Pals also offers a specialized Plant Portfolio to the user on their profile page. Along with the private, digital display, Plant Pals offers the option for the user to fill out a table to keep track of their plant's weekly watering times. This is done to give the user an included space to keep track of their plants, look up information about plants, and talk to other like-minded individuals.
 
-Describe in one paragraph what your project is about. Make it clear what problem your software is solving and the context of the solution.
-- Grading criteria (5 points): Your paragraph should be well written in formal language and must contain all the required information. Be clear, concise, and check for typos and grammar errors. 
-
 ## 2) Initial value proposition and customer segments: 
-Report the initial guesses for the (i) value proposition and (ii) customer segment. The value proposition should make clear what your product is, the target customer, the value you provide, and why your product is unique. See examples on the lecture slides.
-- Grading criteria (5 points): The value proposition should make clear the value from the point of view of the customer. It should not be a slogan or a description of functionality. The value proposition and consumer segment should be coherent with the text in the previous section---in particular, the value should address the problem reported above (problem-solution fit). The customer segment should not be too broad or too specific.
-  
-i) Our services give a green thumb to even the most novice plant owners, and help even  accomplished gardeners grow! With Plant Pals, both a person who has just gotten their first cactus and someone who has long since turned their room into an indoor garden can find the community and information they need for themselves and their plants to thrive. On the Plant Pals website, you can find the need-to-know facts about your plants, or connect with other gardening enthusiasts about questions, ideas, or exciting updates. Many other plant websites have too much information, and can be difficult to sort through, but Plant Pals provides only the necessary facts for success. Moreover, the addition of profiles and discussion boards provides the community that other sites lack. If you want to be a better plant parent, the Plant Pals are here to help!
+i) Our services give a green thumb to even the most novice plant owners, and help even  accomplished gardeners grow! With Plant Pals, both a person who has just gotten their first cactus and someone who has long since turned their room into an indoor garden can find the community and information they need for themselves and their plants to thrive. On the Plant Pals website, you can find the need-to-know facts about your plants, or connect with other gardening enthusiasts about questions, ideas, or exciting updates. Many other plant websites have too much information and can be difficult to sort through, but Plant Pals provides only the necessary facts for success. Moreover, the addition of profiles and discussion boards provides the community that other sites lack. If you want to be a better plant parent, the Plant Pals are here to help!
 
 ii) The intended consumer segment for this project is anyone who has a houseplant, from beginners to experts. Having all skill levels on the platform will allow dashboards to flourish, with learners to ask questions and those with experience to answer them. Furthermore, information about plants is not innate, and anyone with a new plant could utilize a concise database of plant information. 
 
 
 ## 3) Interviews summary: 
-Present the results of each interview (the minimum number of interviews is 1.5 * the number of participants in the group). 
-For each interview, report:
 
-### **1. Interviewee Name # 1** 
+### **1. Jenna Sterry** 
 Haley Kloss interviewed Jenna Sterry
 #### When they were interviewed
 2/2/24
@@ -42,7 +34,7 @@ Fun fact she learned about the best way to water hydrangeas: “It’s best to d
 	Plant portfolios for user accounts: Don’t care
 
 
-### **2. Interviewee Name # 2**
+### **2. Jolie Bushie**
 Haley Kloss interviewed Jolie Bushie
 #### When they were interviewed
 2/2/24 
@@ -61,7 +53,7 @@ On why she doesn’t often research plants: “Not exactly, ‘cus it’s not li
 	Plant portfolios for user accounts: Don’t care
 
 
-### **3. Interviewee Name # 3**
+### **3. Audra Nichlos**
 Haley Berger interviewed Audra Nichlos
 #### When they were interviewed
 2/2/2024
@@ -79,7 +71,7 @@ On if having information would be useful: “Not really, the information was pas
 	Plant portfolios for user accounts: Nice to have
 
 
-### **4. Interviewee Name # 4**
+### **4. Tirra Shawcroft**
 Haley Kloss interviewed Tirra Shawcroft
 #### When they were interviewed
 2/2/24 
@@ -100,7 +92,7 @@ On using websites as a guest vs. a user:  “I think it’s easier to be anonymo
 	Plant portfolios for user accounts: Don’t Care
 
 
-### **4. Interviewee Name # 5**
+### **5. Faith Cook**
 Haley Berger interviewed Faith Cook
 #### When they were interviewed
 2/3/24
@@ -118,7 +110,7 @@ When talking about discussion boards in general, “I find that the internet can
 	Plant portfolios for user accounts: Nice to have
 
 
-### **6. Interviewee Name # 6**
+### **6. Nathan Kaufman**
 Alex King interviewed Nathan Kaufman
 #### When they were interviewed
 2/4/24 
@@ -135,7 +127,7 @@ When asked if he was interested in caring for plants, Nathan responded with “n
 	Plant portfolios for user accounts: Don’t care
 
 
-### **7. Interviewee Name # 7**
+### **7. Jordan Aragon**
 Andrew Ortega interviewed Jordan Aragon
 #### When they were interviewed
 2/4/24 
@@ -151,27 +143,56 @@ When asked about plants, Jordan responded “I love plants.  I have a tulip that
 	User accounts: Must have
 	Plant portfolios for user accounts: Must have
 
-
 ### **8. Interviewee Name # 8**
+Andrew Ortega interviewed Linda Ortega
 #### When they were interviewed
+2/5/24
 #### Customer segment
+Feamle, gardener
 #### Key insights from the interview
+Linda likes to garden in her free time and prune her rose bushes.  She also likes to visit different flower nurseries to see what plants she wants to plant in her yard. She would use the application as a main source of her information on how to keep a better record of her plants and what different care each require. 
 #### Representative quotes
+When asked about the care for plants, she listed that she needs, "help with propogation, what type of fertilizer is best for a plant, how to prevent the plant from being diseased, and how to tend to the insects that will be on the plant."
 #### Assessment: Must have / Nice to have / Don’t care (how the interviewee sees the solution)
+	Discussion board: Must have
+	Searchable plant care database: Must have
+	User accounts: Must have
+	Plant portfolios for user accounts: Must have
 
-
-### 9. Interviewee Name # 9
+### **9. Justin Wilbanks**
+Alyssa Ortiz interviewed Justin Wilbanks
 #### When they were interviewed
+2/5/24
 #### Customer segment
+beginner, gardener, male
 #### Key insights from the interview
+Justin is an amateur gardener, who does not have extensive history with taking care of plants. He gardens mainly to produce fruits and vegetables to eat, and has trouble figuring out when to plant and when to harvest. He noted that he would heavily use the plant lookup database, and otherwise use the app once a week for other purposes. He would be interested in location-specific data for telling users which planting “zone” they are in, as he finds it difficult to find that information on his own.
 #### Representative quotes
+About favorite feature: “My favorite feature would definitely be the searchable database.”
+When asked about what feature they would want the most: “I would want it to use location data that can give recommendations based on your zone.”
 #### Assessment: Must have / Nice to have / Don’t care (how the interviewee sees the solution)
-- Grading criteria (15 points): You should have at least the required number of interviews. For each interview, you should report the required information. The insight should be grounded on the interview and illustrated by the representative quotes. 
+	Discussion board: nice to have
+	Searchable plant care database: must have
+	User accounts: nice to have
+	Plant portfolios for user accounts: nice to have
+  
+### **10. Susan Broda**
+Karissa Smallwood interviewed Susan Broda
+#### When they were interviewed
+2/7/24
+#### Customer segment
+female, has plants, very knowledgeable
+#### Key insights from the interview
+She said having an app at the beginning of your plant journey would be very useful. She also doesn't care for user accounts as well. Overall having an app that could possibly help when her plants are dying is very useful.
+#### Representative quotes
+“I love plants, they are very fun to have and take care of”
+#### Assessment: Must have / Nice to have / Don’t care (how the interviewee sees the solution)
+	Discussion board: Nice to have
+	Searchable plant care database: Nice to have
+	User accounts: Don't care
+	Plant portfolios for user accounts: Nice to have
 
 ## Final value proposition and consumer segments: 
-report the refined versions of these elements (the ones that you reached after the interviews). 
-- Grading criteria (5 points): There must be a connection between the key insights of the interviews and the refinement of the value proposition and customer segments previously presented. See also criteria for Section 2 of this document.
-
 i) Our services give a green thumb to even the most novice plant owners, and help even accomplished gardeners grow! With Plant Pals, both a person who has just gotten their first cactus and someone who has long since turned their room into an indoor garden can find the community and information they need for themselves and their plants to thrive. On the Plant Pals website, you can find the need-to-know facts about your plants, or connect with other gardening enthusiasts about questions, ideas, or exciting updates. Many other plant websites have too much information, and can be difficult to sort through, but Plant Pals provides only the necessary facts for success. Moreover, the addition of profiles and discussion boards provides the community that other sites lack. If you want to be a better plant parent, the Plant Pals are here to help!
 
 ii) The intended consumer segment for this project is anyone who has a houseplant, from beginners to experts. Having all skill levels on the platform will allow dashboards to flourish, with learners to ask questions and those with experience to answer them. Furthermore, information about plants is not innate, and anyone with a new plant could utilize a concise database of plant information.
