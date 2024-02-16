@@ -32,24 +32,22 @@ Ensure that the data is correct, up to date, and input correctly so that the web
 Increase traffic to the website so that it continues to be successful enough to remain live for them to look at.
 
 ## 3) Functional Requirements (features):
-1. Create accounts with unique usernames and passwords.
-2. Email verification for account activation.
-3. Password recovery system.
-4. Create new discussion posts with titles and content
-5. Reply to existing posts.
-6. Allow users to edit and delete their own posts.
-7. View discussion boards/replies.
-8. Create a private plant portfolio and add plant details, including names and images to it.
-9. Create a plant watering schedule.
-11. Allow users to edit or delete plants from their portfolio.
-12. Accurate plant information database.
-13. Search feature for the plant information.
-14. Notification system for replies on posts and watering schedule.
-15. Security features such as password encryption.
-16. UI to easily navigate the website.
-17. Moderation tools.
-18. Feedback/ report bugs
-19. Follow others - ‘friending/pals’
+1. Create accounts.
+2. Email verification for account activation. 
+3. Password recovery system. 
+4. Create new discussion posts with titles and content.
+5. Reply to existing posts. 
+6. Edit and delete posts/replies.
+7. View discussion boards/replies. 
+8. Create a plant portfolio and add plant details, including names and images. 
+9. Create a plant watering schedule. 
+10. Edit or delete plants from the plant portfolio.
+11. Show plant information.
+12. Search for the plant information. 
+13. Create a watering schedule.
+14. Easily navigate website.
+15. "Following" other users.
+16. Toggle the profile to private or public.
 
 ## 4) Non-functional Requirements:
 1) Speed, with fast data retrieval, so that users do not give up waiting and click to another page (sub 5 seconds)
@@ -62,7 +60,7 @@ Increase traffic to the website so that it continues to be successful enough to 
 
 
 ## 5) MVP:
-The Minimum Viable Product for Plant Pals is user profiles with a personal plant portfolio, a plant discussion board, and a functional and informative plant database. The priority is to allow users to make accounts and ask questions on a public forum. They should also be able to add plants to their profile as well as include a watering schedule. This would require account validation, a clear interface, and secure user storage. To test this, we could create test accounts and post discussion forum posts, reply to the posts, and add a plant to our profile. In other words, it would be implemented and then prototyped for functionality. Discussion forums and user profiles aside, users should be able to look up plants and find the exact information they need to successfully care for it. This would require a fast retrieval time for the information (under 5 seconds), a clear user interface and display, and the correct information associated with each label. It would also be beneficial for the search engine to be able to handle spelling errors and extraneous wording. To test this, we would need to test the database’s response to multiple inputs and types of input. We could start by using the Wizard of Woz method to make sure the website could accurately take in information and connect it to the database at the beginning, without the more complex functionalities of retrieval. The site would also need to be resistant to attacks from hackers using SQL injection attacks. To ensure security in this aspect, we would need to test by trying to hack our database.
+The Minimum Viable Product for Plant Pals is user profiles with a personal plant portfolio, a plant discussion board, and a functional and informative plant database. The priority is to allow users to make accounts and ask questions on a public forum. They should also be able to add plants to their profile as well as include a watering schedule. This would require account validation, a clear interface, and secure user storage. To test this, we could create test accounts and post discussion forum posts, reply to the posts, and add a plant to our profile. In other words, it would be implemented and then prototyped for functionality. Discussion forums and user profiles aside, users should be able to look up plants and find the exact information they need to successfully care for them. This would require a fast retrieval time for the information (under 5 seconds), a clear user interface and display, and the correct information associated with each label. It would also be beneficial for the search engine to be able to handle spelling errors and extraneous wording. To test this, we would need to test the database’s response to multiple inputs and types of input. We could start by using the Wizard of Woz method to make sure the website could accurately take in information and connect it to the database at the beginning, without the more complex functionalities of retrieval. The site would also need to be resistant to attacks from hackers using SQL injection attacks. To ensure security in this aspect, we would need to test by trying to hack our database.
 
 ## 6) Use Cases:
 ### 6.1 Use Case Diagram
@@ -77,23 +75,23 @@ Pre-conditions: Must be logged in
 Post-condition: The information is updated
 Success Scenario: The user edits the plant name and plant picture
 - User attempts to access their private profile
-- System takes user to their profile
+- System takes the user to their profile
 - The user adds a new plant picture and plant information
-- The user saves and the new information and picture
-- The system updates the users plant portfolio
+- The user saves the new information and pictures
+- The system updates the user's plant portfolio
 - The user has an updated portfolio
 
 Alternate Scenario #1: The user only edits the plant name successfully
 - User attempts to access their private profile
-- System takes user to their profile
+- System takes the user to their profile
 - The user adds a new plant information (name)
 - The user saves and the new information
-- The system updates the users plant portfolio
+- The system updates the user's plant portfolio
 - The user has an updated portfolio
 
 Alternate Scenario #2: The user edits only the plant picture successfully
 - User attempts to access their private profile
-- System takes user to their profile
+- System takes the user to their profile
 - The user adds a new plant picture
 - The user saves the new plant picture
 - The system updates the user's plant portfolio
@@ -135,14 +133,14 @@ Alternate Scenario #3: An unregistered user tries to respond
 - The user is not logged in
 - The user tries to post a reply to the board
 - The system does not allow the user to make a post
-- The system asks user to sign in
+- The system asks the user to sign in
 
 ![Reply UI](PlantPalsReplyUI.jpg)
 
 
 **Use Case #3**: Create Discussion Post
 Actor: User
-Trigger: Goes to Discussion page 
+Trigger: Goes to the discussion page 
 Pre-conditions: Must be logged in
 Post-condition: The user created a post
 
@@ -174,7 +172,7 @@ Alternate Scenario #2: User creates multiple posts
 Actor: User
 Trigger: Signs into account 
 Pre-conditions: the user has access to the website
-Post-condition: the user signs in or makes account
+Post-condition: the user signs in or makes an account
 
 Success Scenario: The user signs into the website 
 - The user enters email
@@ -259,14 +257,14 @@ As a novice plant owner, I want to search for information about plant care so th
 As a community member, I want to post to a discussion so that I can ask questions to more experienced gardeners. (Priority level: 2 Hours: 4)
 As a new account holder, I want to easily make my profile so that I can document my plants. (Priority level: 13 Hours: 7)
 As a frequent website visitor, I want to friend other users so that I can keep up with others in my community. (Priority level: 233 Hours: 9)
-As an experienced gardener, I want to find and respond to discussions so that I can help people get into plant owning. (Priority level: 8 Hours: 2)
+As an experienced gardener, I want to find and respond to discussions so that I can help people get into plant ownership. (Priority level: 8 Hours: 2)
 As a casual browser, I want to search for information without signing in so I can decide whether or not I want to make an account. (Priority level: 3 Hours: 2)
 As an older person without much technological savvy, I want to be able to navigate around the website easily so that I can do what I need to without getting confused. (Priority level: 21 Hours: 3)
 As an admin, I want to be able to easily moderate so that the website stays informative, helpful, and good-natured. (Priority level: 5 Hours: 5)
 As a database manager, I want to be able to add/remove/edit plants so that information stays up-to-date and is easily manageable. (Priority level: 34 Hours: 2)
 As a new account holder, I want to save my plants so that I can take better care of my plants. (Priority level: 55 Hours: 4)
 As an experienced gardener, I want the ability to put in a request if data is wrong so that there is always accurate information available. (Priority level: 144 Hours: 2)
-As a long term account holder, I want to be able to edit my information so that I can keep my account up to date. (Priority level: 89 Hours: 3)
+As a long-term account holder, I want to be able to edit my information so that I can keep my account up to date. (Priority level: 89 Hours: 3)
 
 
 ## 8) Issue Tracker:
