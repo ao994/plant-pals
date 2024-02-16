@@ -104,6 +104,8 @@ Alternate Scenario #3: The user fails to edit the plant information
 - The user is not logged in
 - The system does not allow the user to access the profile page
 
+![Portfolio UI](plantPalsPortfolioUI.jpg)
+
 **Use Case #2**: Comment on Discussion Boards
 Actor: User
 Trigger: Goes to Discussion Board Page
@@ -135,22 +137,118 @@ Alternate Scenario #3: An unregistered user tries to respond
 - The system does not allow the user to make a post
 - The system asks user to sign in
 
+![Reply UI](PlantPalsReplyUI.jpg)
 
-**Use Case #3**:
 
-**Use Case #4**:
+**Use Case #3**: Create Discussion Post
+Actor: User
+Trigger: Goes to Discussion page 
+Pre-conditions: Must be logged in
+Post-condition: The user created a post
 
-**Use Case #5**:
+Success Scenario: The user creates and posts a discussion board to the page.
+- User attempts to write a post
+- The user adds a discussion post
+- The system displays the post and tells the user that they successfully created a post
+- The user can now see their pos t in the forum
+- The user has created a post
 
-**Use Case #6**:
+Alternate Scenario #1: The user fails to create a post
+- User attempts to write a post
+- System asks them to login
+- The user does not have an account
+- The system doesn’t allow for the user to create a new discussion post
+
+Alternate Scenario #2: User creates multiple posts
+- User attempts to write a post
+- The user adds a discussion post
+- The system displays the post and tells the user that they successfully created a post
+- The user can now see their post in the forum
+- The user adds another discussion post
+- The system displays the post and tells the user that they successfully created a post
+- The user has created multiple posts
 
 ![Discussion UI](PlantPalsDiscussionUI.jpg)
-![Login UI](PlantPalsLoginUI.jpg)
-![Reply UI](PlantPalsReplyUI.jpg)
-![Search UI](PlantPalsSearchUI.jpg)
-![Portfolio UI](plantPalsPortfolioUI.jpg)
 
-In addition to this, we have also settled on a hex code color palett we will be using. This is going to be done for cohesion as is as follows:
+**Use Case #4**: Sign-in
+Actor: User
+Trigger: Signs into account 
+Pre-conditions: the user has access to the website
+Post-condition: the user signs in or makes account
+
+Success Scenario: The user signs into the website 
+- The user enters email
+- The user enters password
+- The user clicks submit button
+- The system verifies the password and username match
+- The user successfully signs in
+
+Alternate Scenario #1: User cannot log in
+- The user enters email address
+- The user enters password
+- The user clicks submit
+- The system verifies the password and username match, and rejects the password and username
+- The user can reattempt log-in until correct
+
+Alternate Scenario #2: User does not have an account
+- The user clicks the sign up button
+- The user enters desired email address
+- The user enters desired password
+- The user clicks submit
+- The user is now able to sign into their account
+
+![Login UI](PlantPalsLoginUI.jpg)
+
+**Use Case #5**: User searches for plant
+Actor: User
+Trigger: Enters text into search box
+Pre-conditions: The user has access to the website
+Post-condition: The user receives a page full of similarly named plants
+
+Success scenario: The user searches for a plant
+- The user searches for plant information
+- The system shows the most relevant results
+- The user selects the plant they were searching for
+- The user gets the information they want
+
+Alternate scenario #1: The user does not have access to the internet
+- The user cannot get a connection to the server
+- The user attempts to reconnect to the internet or moves to a location with internet access
+- The user gets the information they want
+
+Alternate scenario #2: The user does not know the name of the plant
+- The user will have to rely on external tools to find the name of the plant
+- The user searches for the plant
+- The user gets the information they want
+
+![Search UI](PlantPalsSearchUI.jpg)
+
+
+**Use Case #6**: Edit User Profile
+Actor: User
+Trigger: selects edit profile button
+Pre-conditions: Must be logged in
+Post-condition: The user information is updated
+
+Success Scenario: The user edits their information
+- User attempts to edit their profile
+- System takes user to edit profile page
+- The user changes information in their profile
+- The user saves the new information
+- The system updates the user's profile information
+- The user has an updated profile
+
+Alternate Scenario #1: The user edits their profile information but does not save changes
+- User attempts to edit their profile
+- System takes user to edit profile page
+- The user changes information in their profile
+- The user does not save the new information
+- The system loads the user's previous profile information
+- The user does not have an updated profile
+
+
+
+In addition to this, we have also settled on a hex code color palette we will be using. This is going to be done for cohesion as is as follows:
 #1F6321  / #69A743 / #E9FEBA / #F2D79C / #E9BF61 / #A75E0D / #80480A / #603608
 We understand that the current diagrams do not match this, but in production, they will.
 
