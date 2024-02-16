@@ -66,6 +66,7 @@ The Minimum Viable Product for Plant Pals is user profiles with a personal plant
 
 ## 6) Use Cases:
 ### 6.1 Use Case Diagram
+
 ![UML](plantPalsUML.jpg)
 
 ### 6.2 Use Case Description
