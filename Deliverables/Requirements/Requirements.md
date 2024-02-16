@@ -246,6 +246,7 @@ Alternate Scenario #1: The user edits their profile information but does not sav
 - The system loads the user's previous profile information
 - The user does not have an updated profile
 
+![Edit Profiles UI](plantPalsEditProfileUI.jpg)
 
 
 In addition to this, we have also settled on a hex code color palette we will be using. This is going to be done for cohesion as is as follows:
@@ -269,3 +270,7 @@ As a long term account holder, I want to be able to edit my information so that 
 
 
 ## 8) Issue Tracker:
+https://github.com/ao994/plant-pals/issues 
+
+![Issues](plantPalsIssues.jpg)
+
