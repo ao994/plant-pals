@@ -1,5 +1,5 @@
 # Project Inception
-*Group 2 - "[Plant Pals]"
+*Group 2 - "[Plant Pals]"*
 Group Members: Haley Berger, Haley Kloss, Alex King, Andrew Ortega, Karissa Smallwood, Alyssa Ortega
 
 ## 1) Positioning:
