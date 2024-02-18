@@ -50,13 +50,17 @@ Increase traffic to the website so that it continues to be successful enough to 
 16. Toggle the profile to private or public.
 
 ## 4) Non-functional Requirements:
-1) Speed, with fast data retrieval, so that users do not give up waiting and click to another page (sub 5 seconds)
-2) Security of passwords and sensitive profile information, so that accounts cannot easily be hacked (no security breaches within the first month of deployment)
-3) Reliability of function, so that if a person post, searches, or follows, they can be confident that it will go through as intended (less than 1% of users submitting bug reports on these functions in the first month)
-4) Ease of use of user interface, so that users can quickly and intuitively use the website (new users are able to use all major features within an hour of making an account)
-5) Scalability of the database and user base, so that more people can join over time and more plants can be added to the database (after one year live people can continue to join the site and the database has at least grown by 1.5x)
-6) Accessibility, making it so the visually impaired can still use the site and read the key information  (if possible, implement text to speech, and have visually impaired test users to try out the site)
-7) Compatibility with multiple types of devices using dynamic web page design (test the main pages on multiple sizes and types of devices)
+1) Security: The site should securely store user emails and passwords using standard industry practices such as hashing passwords, which our authentication system does for us. (Ensure passwords are hashed, test to ensure site does not fail against XSS and SQL attacks before deployment by using some common attack strategies against our own site during testing)
+
+2) Performance efficiency: The site should efficiently utilize resources on both the server and client side, and respond to user interactions quickly. (Test for load and search return times, ensuring they are under 5 seconds in testing, by physically timing it)
+
+3) Usability: The site should be easy to navigate and use for anybody on a desktop browser. (Have developers and beta testers test the site and ensure they are able to navigate it and understand all the features within an hour)
+4) Accessibility: The site should support screen-readers, screen magnifiers, and comply with the ADA’s guidelines for text contrast (Test for compliance with ADA guidelines on text contrast, and test for support with free screen reader software on developers’ machines)
+
+5) Compatibility: The site should be compatible with all commonly used desktop browsers (Ensure functionality across Microsoft Edge, Google Chrome, Safari, and Firefox by testing the website in each browser)
+
+6) Reliability: The site should work reliably on all compatible desktop browsers and the server should host the site with minimal downtime. (Stress test against bot attacks by creating thousands of fake accounts and running them at the same time)
+
 
 
 ## 5) MVP:
