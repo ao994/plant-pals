@@ -3,7 +3,7 @@
 
 Group Members: Haley Berger, Haley Kloss, Alex King, Andrew Ortega, Karissa Smallwood, Alyssa Ortega
 
-## 1) Positioning:
+## **1) Positioning:**
 
 ### 1.1 Problem Statement
 The problem of lack of community and information in houseplant ownership affects plant owners; the impact of which is isolation and ineffective plant care that results in plants dying preventable deaths.
@@ -16,7 +16,7 @@ For plant owners who want to connect with a community and get help with plant ca
 
 **Consumer Segment:** Plant Pals is for anyone who has a houseplant, from beginners to experts, who wants to get involved with a plant-loving community and have reliable information to help plants thrive.
 
-## 2) Stakeholders:
+## **2) Stakeholders:**
 **Plant Owners** - Plant owners who make an account with Plant Pals
 
 Will visit and utilize the website so that it is successful and they may continue to use it. Will also add to discussion boards to build and be part of a thriving community. 
@@ -37,7 +37,7 @@ Ensure that the data is correct, up to date, and input correctly so that the web
 
 Increase traffic to the website so that it continues to be successful enough to remain live for them to look at.
 
-## 3) Functional Requirements (features):
+## **3) Functional Requirements (features):**
 1. Create accounts.
 2. Email verification for account activation. 
 3. Password recovery system. 
@@ -55,7 +55,7 @@ Increase traffic to the website so that it continues to be successful enough to 
 15. "Following" other users.
 16. Toggle the profile to private or public.
 
-## 4) Non-functional Requirements:
+## **4) Non-functional Requirements:**
 1) Security: The site should securely store user emails and passwords using standard industry practices such as hashing passwords, which our authentication system does for us. (Ensure passwords are hashed, test to ensure site does not fail against XSS and SQL attacks before deployment by using some common attack strategies against our own site during testing)
 
 2) Performance efficiency: The site should efficiently utilize resources on both the server and client side, and respond to user interactions quickly. (Test for load and search return times, ensuring they are under 5 seconds in testing, by physically timing it)
@@ -69,10 +69,10 @@ Increase traffic to the website so that it continues to be successful enough to 
 
 
 
-## 5) MVP:
+## **5) MVP:**
 The Minimum Viable Product for Plant Pals is user profiles with a personal plant portfolio, a plant discussion board, and a functional and informative plant database. The priority is to allow users to make accounts and ask questions on a public forum. They should also be able to add plants to their profile as well as include a watering schedule. This would require account validation, a clear interface, and secure user storage. To test this, we could create test accounts and post discussion forum posts, reply to the posts, and add a plant to our profile. In other words, it would be implemented and then prototyped for functionality. Discussion forums and user profiles aside, users should be able to look up plants and find the exact information they need to successfully care for them. This would require a fast retrieval time for the information (under 5 seconds), a clear user interface and display, and the correct information associated with each label. It would also be beneficial for the search engine to be able to handle spelling errors and extraneous wording. To test this, we would need to test the database’s response to multiple inputs and types of input. We could start by using the Wizard of Woz method to make sure the website could accurately take in information and connect it to the database at the beginning, without the more complex functionalities of retrieval. The site would also need to be resistant to attacks from hackers using SQL injection attacks. To ensure security in this aspect, we would need to test by trying to hack our database.
 
-## 6) Use Cases:
+## **6) Use Cases:**
 ### 6.1 Use Case Diagram
 
 ![UML](plantPalsUML.jpg)
@@ -262,7 +262,7 @@ In addition to this, we have also settled on a hex code color palette we will be
 
 We understand that the current diagrams do not match this, but in production, they will.
 
-## 7) User Stories:
+## **7) User Stories:**
 
 1. As a novice plant owner, I want to search for information about plant care so that I can keep my plants alive. (Priority level: 1 Hours: 6)
 2. As a community member, I want to post to a discussion so that I can ask questions to more experienced gardeners. (Priority level: 2 Hours: 4)
@@ -278,7 +278,7 @@ We understand that the current diagrams do not match this, but in production, th
 12. As a long-term account holder, I want to be able to edit my information so that I can keep my account up to date. (Priority level: 89 Hours: 3)
 
 
-## 8) Issue Tracker:
+## **8) Issue Tracker:**
 https://github.com/ao994/plant-pals/issues 
 
 ![Issues](plantPalsIssues.jpg)
