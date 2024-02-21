@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  django:
+    container_name: django
+    build: 
+      context: ./
+    ports:
+      - 8001:8000
+    volumes:
+      - ./db:/usr/src/app/db
+    environment:
+      - DEBUG=1
+      - SECRET_KEY=Yb75OOSBY*DUiy
+      - ALLOWED_HOSTS=localhost,127.0.0.1
