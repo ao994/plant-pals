@@ -6,7 +6,8 @@ services:
     build: 
       context: ./
     ports:
-      - 8001:8000
+      - 80:8000
+    platform: linux/amd64
     volumes:
       - ./db:/usr/src/app/db
     image: ghcr.io/ak2466/plantpals:latest
