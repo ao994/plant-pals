@@ -1,0 +1,50 @@
+#prof_page{
+    background-color: #6C584C;
+    color: #383c44;
+}
+
+#prof_page .btn-success{
+    background-color: #ADC178;
+    border-color: white;
+}
+#prof_page .card-body{
+   font-family:  "Bradley Hand ITC", cursive;  
+} 
+
+#prof_page h3{
+    font-family:  "Handlee", cursive; 
+    font-size: 250% ;
+    /*maybe Pristina?*/
+} 
+
+#prof_page .the_info
+    {
+    background-color: #DDE5B6;
+    border: 15px solid #DDE5B6;
+    border-radius: 1%;
+    padding: 30px;
+    margin: 20px;
+}
+#prof_page .prof-photo{
+    background-color: #DDE5B6;
+    border: 15px solid #DDE5B6;
+    border-radius: 1%;
+    padding: 30px;
+    margin: 20px;
+}
+#prof_page .center-this {
+    display: flex;
+    justify-content: center;
+}
+#prof_page .plant{
+    background-color: #DDE5B6;
+    border: 15px solid #DDE5B6;
+    border-radius: 1%;
+    padding: 30px;
+    margin: 20px;
+}
+                        
+#prof_page .center-it {
+    display: flex;
+    justify-content: center;
+}
