@@ -7,8 +7,16 @@
     background-color: #ADC178;
     border-color: white;
 }
+
+#prof_page .btn:hover {
+    color: #fff;
+    background-color: #1F6321;
+    border-color: white;
+    transition: background-color 0.15s;
+}
+
 #prof_page .card-body{
-   font-family:  "Bradley Hand ITC", cursive;  
+   font-family:  "Klee One", cursive;  
 } 
 
 #prof_page h3{
