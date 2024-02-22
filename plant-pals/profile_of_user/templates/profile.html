@@ -6,16 +6,6 @@
 {% block css %}
     {# Add your CSS links or styles here if needed #}
 
- <style>
-    .container{
-        background-color: #F2D79C;
-    }
-    
-    
-
- </style>
-
-
 {% endblock %}
 {% block body %}
 <br>
@@ -33,47 +23,23 @@
         </button>
     </div>
 {% endfor %}
-<style>
-    
-    .container{
-        background-color: #6C584C;
-        color: #383c44;
-    }
 
-    .btn-success{
-        background-color: #ADC178;
-        border-color: white;
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
 
-    
- </style>
-<div class="container">
+<!-- CSS stylesheet reference -->
+{% load static %}
+<link rel="stylesheet" href="{% static '/admin/css/profile_style.css' %}">
+
+ 
+<div id="prof_page" class="container" >
     <div class="row">
         <div class="col-lg-12 col-lg-offset-0">
             <div class="row pad">
                 <div class="col-lg-12">
                     <div class="panel panel-primary">
-                        <style>
-                           .card-body{
-                                font-family:  "Bradley Hand ITC", cursive;  
-                           } 
-                           h3{
-                            font-family:  "pristina", cursive; 
-                            font-size: 250% ;
-                           } 
 
-
-                            .the_info
-                            {
-                                background-color: #DDE5B6;
-                                border: 15px solid #DDE5B6;
-                                border-radius: 1%;
-                                padding: 30px;
-                                margin: 20px;
-                            }
-                             
-
-                        </style>
                         <div class="card-body">
                             <h3 style="color:#DDE5B6;">BUILD YOUR PROFILE</h3>
                             <ul class="list-group">
@@ -93,7 +59,7 @@
                                         <div class="the_info">
                                             <h3 style="text-align: center;"><b>Enter Your Information</b></h3>
                                         <!-- for avatar form -->
-                                        <h5 ><b>AVATAR</b></h5>
+                                        <h5><b>AVATAR</b></h5>
                                         {{ avatar_form.as_p }}
                                         <button type="submit" class="btn btn-success"  name="avatar_submit">Upload Avatar</button>
                                         <br></br>
@@ -105,23 +71,9 @@
                                          <br></br>
                                         </div>
 
-
-                                         <style>
-                                            .prof-photo{
-                                              background-color: #DDE5B6;
-                                              border: 15px solid #DDE5B6;
-                                              border-radius: 1%;
-                                              padding: 30px;
-                                              margin: 20px;
-                                            }
-                                            .center-this {
-                                             display: flex;
-                                             justify-content: center;
-                                            }
-                                        </style>
                                         <!-- for avatar image display -->
                                         
-                                    <div class="prof-photo">
+                                     <div class="prof-photo">
                                         <h3  style="text-align: center;" ><b>Profile Photo</b></h3> 
                                             <p>Name: {{ request.user }}</p>
                                             <p>Image:<strong class="float-right"> <div class = "center-this"><img
@@ -132,24 +84,7 @@
                                          
                                          
                                         <!-- for plant image display -->
-                                        <style>
-
-                                            .plant{
-                                              background-color: #DDE5B6;
-                                              border: 15px solid #DDE5B6;
-                                              border-radius: 1%;
-                                              padding: 30px;
-                                              margin: 20px;
-
-                                            }
-
-                                            
-                                            .center-it {
-                                             display: flex;
-                                             justify-content: center;
-                                            }
-                                            
-                                        </style>
+                                        
                                         {% if request.user.profile.plant_image_1 %}
                                             <div class="plant-info">
                                                 <div class="plant">
