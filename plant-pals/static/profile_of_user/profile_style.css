@@ -19,6 +19,10 @@
    font-family:  "Klee One", cursive;  
 } 
 
+#prof_page .list-group{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+ } 
+
 #prof_page h3{
     font-family:  "Handlee", cursive; 
     font-size: 250% ;

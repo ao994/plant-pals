@@ -155,8 +155,8 @@ input[type="password"] {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus {
-  border-bottom: 2px solid #16a085;
-  color: #16a085;
+  border-bottom: 2px solid #1F6321;
+  color: #1F6321;
   transition: 0.2s ease;
 }
 
@@ -164,11 +164,11 @@ input[type="submit"] {
   margin-top: 28px;
   width: 120px;
   height: 32px;
-  background: #16a085;
+  background: #1F6321;
   border: none;
   border-radius: 2px;
   color: #FFF;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Klee One", 'Roboto', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   transition: 0.1s ease;
