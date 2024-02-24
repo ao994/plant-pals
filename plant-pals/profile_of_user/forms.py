@@ -9,11 +9,13 @@ from django import forms
 ## fields = [''] | says that the names in the list is now a variable. You
    ## can see these used in models.py in our Profile class.
 
+# profile form draws from profile model and has an avatar image field
 class ProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
         fields = ['avatar']
 
+# plant form draws from profile model and has plant image fields
 class PlantForm(forms.ModelForm):
     class Meta:
         model = Profile
