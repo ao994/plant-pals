@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils.timezone import now
 
-# Create your models here.
+# profile model
 class Profile(models.Model):
     user = models.OneToOneField(User, null=True, blank=True, on_delete=models.CASCADE)    
     # for user avatar images
@@ -17,14 +17,15 @@ class Profile(models.Model):
     plant_image_1 = models.ImageField(upload_to="additional_images", default="default/user.png")
     plant_name_1 = models.CharField(max_length=60,  default="")
 
-
+# post model
 class Post(models.Model):
     user1 = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
     post_id = models.AutoField
     post_content = models.CharField(max_length=5000)
     timestamp= models.DateTimeField(default=now)
     image = models.ImageField(upload_to="images",default="")
-    
+
+# reply model (associated with post)
 class Replie(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
     reply_id = models.AutoField
