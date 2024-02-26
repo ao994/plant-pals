@@ -1,8 +1,9 @@
 .card-header{
-    background-color: #ADC178;
+    background-color: #6C584C; 
     border-color: white;
 }
 
 .card-body{
-    background-color: red;
+    background-color: #ADC178;
+    border-color: white;
 }
