@@ -132,9 +132,13 @@ def UserLogout(request):
     return redirect('/login')
 
 
+# designated login requirement
 @login_required(login_url='/login')
+
+# for profile page
 def myprofile(request):
     profile_page = "profile.html"
+    profile_redirect = '/myprofile'
 
     profile, created = Profile.objects.get_or_create(user=request.user)
 
@@ -146,7 +150,7 @@ def myprofile(request):
             if avatar_form.is_valid():
                 avatar_form.save()
                 messages.success(request, 'Profile picture updated successfully!')
-                return redirect('/myprofile')
+                return redirect(profile_redirect)
 
         elif 'plant_submit' in request.POST:
             if plant_form.is_valid():
@@ -163,7 +167,7 @@ def myprofile(request):
             profile.plant_image_1 = None
             profile.save()
             messages.success(request, 'Plant image removed successfully!')
-            return redirect('/myprofile')    
+            return redirect(profile_redirect)    
         
     else:
         avatar_form = ProfileForm(instance=profile)
