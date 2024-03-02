@@ -1,11 +1,6 @@
-**D.3 Analysis**
+# D.3 Analysis
 
-**Grading:** 30 points
-
-
----
-
-#### **1. System Description**
+## **1. System Description**
 
 Owning a houseplant can be a daunting task for those who are not confident in their plant care abilities, and who are unsure of how to effectively care for their leafy companions. This has created the problem of a lack of community and information on how houseplant ownership affects plant owners. The impact of this is isolation and ineffective plant care that results in plants dying and preventable deaths. A service like Plant Pals can resolve these issues of plant mismanagement and preserve plant life! This is an issue that can be solved with a service like Plant Pals! For plant owners who want to connect with a community and get help with plant care, Plant Pals is a website that connects the plant community and offers reliable insights into plant care. Unlike OurHousePlants.com, our product does not fully rely on a pre-set FAQ and allows plant owners to interact with one another. Whereas a lot of available resources are detached, and have extraneous, confusing information, Plant Pals works to ensure that plant care is accessible to all. Plant Pals helps plant owners grow (and not kill their plants) by providing information and a community that gives everyone a green thumb!
 
@@ -16,6 +11,6 @@ The **plant database** is an essential feature of the Plant Pals website. The **
 **Discussion boards** are a standout feature of the website, allowing **users** to build a community. Signed-in **users** can make **dashboards** for broad subjects. On these **dashboards**, these users can also make **posts** asking _questions_, _giving plant updates_, or _sharing information_. **Posts** have **comments** sections, where logged-in **users** can make **comments** about the **post** or even other **comments** with _answers_, _further questions_, or other _contributions_. A **user** who is not logged in cannot interact with a dashboard, but can **_observe_** it. These dashboards must be **_monitored_** by logged in **moderators** who can **_take down_** **comments** and **posts** that are not consistent with the values of the website. The **dashboards** as a whole provide a way for users to correspond with others who have similar interests to share valuable information and support. 
 
 
-#### **2. Model**
+## **2. Model**
 
 ![Class diagram for Plant Pals.](class_diagram.png)
