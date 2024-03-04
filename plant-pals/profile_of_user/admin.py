@@ -5,7 +5,12 @@ from django.contrib import admin
 from .models import Post, Replie, Profile
 
 # make sure to register what you want to be able to have admin control of from models!
-# if you don't, you can't access it on the admin site w/ admin control pannels
+# if you don't, you can't access it on the admin site w/ admin control panels
 admin.site.register(Post)
 admin.site.register(Replie)
 admin.site.register(Profile)
+
+#import plants database model
+from .models import Plant
+
+admin.site.register(Plant)
