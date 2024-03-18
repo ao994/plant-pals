@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  django:
+    container_name: django
+    build: 
+      context: ./
+    ports:
+      - 80:80
+    platform: linux/amd64
+    volumes:
+      - ./db:/usr/src/app/db
+    image: ghcr.io/ak2466/plantpals:latest
