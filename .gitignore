@@ -3,4 +3,5 @@
 **/profile_of_user/__pycache__/**
 **/profile_of_user/migrations/**
 **/.venv/**
+**.DS_Store**
 plant-pals/db.sqlite3
