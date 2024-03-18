@@ -1,7 +1,5 @@
-/db.sqlite3
-**/Forum/__pycache__/**
-**/profile_of_user/__pycache__/**
-**/profile_of_user/migrations/**
-**/.venv/**
-**.DS_Store**
-plant-pals/db.sqlite3
+db.sqlite3
+__pycache__
+migrations/
+.DS_Store
+djangoenv/
