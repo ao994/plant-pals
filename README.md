@@ -6,6 +6,7 @@
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 Run the following commands in the command line: 
 
+Windows:
 py -m venv .venv
 .venv\Scripts\activate
 pip install django
@@ -61,10 +62,10 @@ Explain what these tests test and why
 Give an example
 ```
 
-## Deployment
+## Deployment: 
+http://64.23.151.143/
 
-This website was deployed with Docker, and is available at http://64.23.151.143/
-[Plant Pals](http://64.23.151.143/)
+This website is deployed in a Docker container running on a Virtual Private Server provided by Digital Ocean (see: Digital Ocean Droplet). The code is all contained within a single image which is used to build a docker container, with a volume mapping to a separate SQLite Database file in the server's filesystem. The Docker container exposes Port 80 so the contents are accessible to the outside world.
 
 ## Built With
 
