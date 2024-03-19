@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, HttpResponse, Http404
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth  import authenticate,  login, logout
-from .models import Post, Replie, Profile
+from .models import Post, Replie, Profile, Plant
 from .forms import ProfileForm, PlantForm
 from django.contrib.auth.decorators import login_required
 
@@ -174,3 +174,8 @@ def myprofile(request):
         plant_form = PlantForm(instance=profile)
 
     return render(request, profile_page, {'avatar_form': avatar_form, 'plant_form': plant_form, 'created': created})
+
+#for search page
+def search(request):
+    # to do
+    
