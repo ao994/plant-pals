@@ -22,9 +22,9 @@ python manage.py runserver
 ### Prerequisites
 Install: 
 
-python: go to https://www.python.org/downloads/  download the most recent release for your computer  run the installer
-django: run command pip install django
-pillow: run command pip install pillow
+- python: go to https://www.python.org/downloads/  download the most recent release for your computer  run the installer
+- django: run command pip install django
+- pillow: run command pip install pillow
 
 ### Installing
 
@@ -42,25 +42,44 @@ A step by step series of examples that tell you how to get a development env run
 
 End with an example of getting some data out of the system or using it for a little demo
 
+### Testing
 ## Running the tests
+1. In the command line, enter the virtual environment and navigate to where the manage.py file is located.
+2. Run the command: python manage.py test
+3. The tests will run and results will be displayed.
 
-Explain how to run the automated tests for this system
+   Additional notes: a '.' will be displayed for a successful test. An 'E' will be displayed if an error is presented, and a 'F' will be displayed when a failure is presented.
+   If four '.' are presented, then each of the four following tests was successful.
 
-### Break down into end to end tests
+## The Tests
+**Test 1:** checks to make sure a profile was properly created (checks with database)
 
-Explain what these tests test and why
+This test creates a test user profile. Data is saved into the profile (fake name, email, et cetera) and then is added to a temporary database. The test confirms that the information in the database is as expected. The test then clears the temporary database, confirming that the information was removed as expected.
 
-```
-Give an example
-```
+**Test 2:** checks to make sure a post is associated with the proper user and stored (checks with database)
 
-### And coding style tests
+This test creates a test post. Data is saved into the post (text) and then is added to a temporary database. The test confirms that the information in the database is as expected and that the post associates with the current user. The test then clears the temporary database, confirming that the information was removed as expected.
 
-Explain what these tests test and why
+**Test 3:** checks to make sure the reply is associated with the correct post and user and stored (checks with database)
 
-```
-Give an example
-```
+This test creates a test reply. Data is saved into the reply (text) and then is added to a temporary database. The test confirms that the information in the database is as expected and that the post associates with the current user and original reply. The test then clears the temporary database, confirming that the information was removed as expected.
+
+**Test 4:** checks to make sure a plant is properly created and stored with all associated information (checks with database)
+
+This test creates a test plant. Data is saved into the made temporary plant (fake name and other plant information) and then is added to a temporary database. The test confirms that the information in the database is as expected. The test then clears the temporary database, confirming that the information was removed as expected.
+
+**It should be noted that tests 1, 2, and 3 (although independent) run with some association with the other. Test three, for example, needs to have a user (profile) from which the reply is posted. A reply also cannot be sent without an original post.**
+
+
+### Coding Style Tests/ Coding Standards
+
+1. All variables must be self-documenting. Reason: If someone wants to go through and change something, we need to be able to easily identify what to change.
+2. Formatting must be consistent. Reason: We want to be able to easily find what we are looking for. If code is inconsistently formatted, that would be difficult.
+3. Follow logic. Don't do something in a roundabout way even if it is easier to code. Make it easy to follow. Reason: We want to be able to understand the code when looking at it.
+4. No using break unless necessary. Reason: There are very few circumstances where break is needed. It's best to avoid it to keep logic consistent.
+5. Avoid global variables. Reason: We really should not need them and it would be hard to track them through code.
+6. Keep to useing true or false rather than 1 or 0. Reason: General readability. Makes it easier/faster to understand and track.
+7. Use of continue. Reason: There is no reason we should use this and it would just break up code readability.
 
 ## Deployment: 
 http://64.23.151.143/
