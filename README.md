@@ -43,7 +43,7 @@ A step by step series of examples that tell you how to get a development env run
 End with an example of getting some data out of the system or using it for a little demo
 
 ### Testing
-## Running the tests
+#### Running the tests
 1. In the command line, enter the virtual environment and navigate to where the manage.py file is located.
 2. Run the command: python manage.py test
 3. The tests will run and results will be displayed.
@@ -51,7 +51,7 @@ End with an example of getting some data out of the system or using it for a lit
    Additional notes: a '.' will be displayed for a successful test. An 'E' will be displayed if an error is presented, and a 'F' will be displayed when a failure is presented.
    If four '.' are presented, then each of the four following tests was successful.
 
-## The Tests
+#### The Tests
 **Test 1:** checks to make sure a profile was properly created (checks with database)
 
 This test creates a test user profile. Data is saved into the profile (fake name, email, et cetera) and then is added to a temporary database. The test confirms that the information in the database is as expected. The test then clears the temporary database, confirming that the information was removed as expected.
