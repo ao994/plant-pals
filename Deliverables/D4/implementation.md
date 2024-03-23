@@ -239,19 +239,19 @@ Grading criteria (3 points): This section will be based on the presence and qual
 ## 9. Look & feel (Haley K)
 Describe the approach you adopted to design your user interface. Include some screenshots.
 
-In making a user interface, we wanted the website to be very easy to navigate, with a few main pages listed clearly on the top for people to click through. 
+### In making a user interface, we wanted the website to be very easy to navigate, with a few main pages listed clearly on the top for people to click through: 
 ![alt text][look1]
 
 
-We also wanted Plant Pals to be easy to use on different devices, so it is very adaptive to different screen sizes.
+#### We also wanted Plant Pals to be easy to use on different devices, so it is very adaptive to different screen sizes:
 ![alt text][look2]
 
 
-We tried to make the colors of the website earthy, with lots of browns and greens used to invoke plant life. We also incorporated images of plants and flowers in the backgrounds of some pages, to further this style.
+#### We tried to make the colors of the website earthy, with lots of browns and greens used to invoke plant life. We also incorporated images of plants and flowers in the backgrounds of some pages, to further this style:
 ![alt text][look3]
 
 
-We used many boxes with rounded edges to keep information separate and digestible while avoiding harsh corners. This allowed for a better look and an easier viewing experience for the users.
+#### We used many boxes with rounded edges to keep information separate and digestible while avoiding harsh corners. This allowed for a better look and an easier viewing experience for the users:
 ![alt text][look4]
 
 
