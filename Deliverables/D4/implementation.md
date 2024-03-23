@@ -150,21 +150,26 @@ GitHub automated test file: https://github.com/ao994/plant-pals/blob/main/Code/p
 
 
 It should be quickly noted that the test files automatically run as follows:
-Calls the setup function
-Calls the first individual test function in line
-Calls the cleanup function
-The process resets with the individual test being the next one in line. It will continue to run until all test cases have been run through.
+1. Calls the setup function
+2. Calls the first individual test function in line
+3. Calls the cleanup function
+4. The process resets with the individual test being the next one in line. It will continue to run until all test cases have been run through.
+
 The reason we currently have the setup/teardown function running everything is that most of the information connects. Let’s look at the profile class. A post connects with a specific profile. It can be similarly observed for a reply. A reply connects to a specific user, but it also connects to an initial post. As a result, other data needs to be defined to run some of the tests. For that reason, we have the file laid out with one setup and cleanup function, that also have individual functions for each test. Below is an example of one test case process.
+
 Setup (creates a new object (a new/test plant) using our Plant model; this also adds it to a temporary database created by Django):
+![alt text][test1]
 
 Data validation/assertion (confirms that the information in the database matches the information assigned):
+![alt text][test2]
+
 
 Cleanup (removes the added database information to prepare for next test/ confirm that information is properly removed when deleted)
-
+![alt text][test3]
 
 
 Plant model aside, we have a test case for every model we have made (posts, replies, and profile). 
-
+![alt text][test4]
 
 Below are the test results:
 
@@ -175,14 +180,25 @@ Each ‘.’ represents a successful run of a single test case. There are four �
 
 Grading criteria (4 points): You should have an adequate number of automated tests. They should be well-written to exercise the main components of your system, covering the relevant inputs.
 
+[test1]: https://github.com/ao994/plant-pals/blob/alex-development/Deliverables/D4/test1.png
+[test2]: https://github.com/ao994/plant-pals/blob/alex-development/Deliverables/D4/test2.png
+[test3]: https://github.com/ao994/plant-pals/blob/alex-development/Deliverables/D4/test3.png
+[test4]: https://github.com/ao994/plant-pals/blob/alex-development/Deliverables/D4/test4.png
+
 ## 4. Adopted technologies (Haley Berger & Alex)
 List the adopted technologies with a brief description and justification for choosing them.
-Django (Haley B) - Django is a Python-based, high-level web framework. It has its own URL routing, database models, templates, file structure, and testing system. These ease-of-use features allow us to focus more on the logistics side of how things should run rather than how to get them running. Django comes with a built-in admin panel as well, allowing us to easily access necessary (otherwise encrypted) database information. Some of this information isn’t viewable, such as passwords or other sensitive data. On that note, Django also offers a lot of security features that help protect against things like SQL injections. Django, being free and Python-based, also has a large fanbase of users who made tutorials on various functionalities provided by Django as well as how to build simple websites with it. This drew us in because we know that if we run across an issue, we will most likely be able to find the solution somewhere on the internet. In addition to that, using web frameworks is something that nobody in the group had experience with. We thought it would be a good idea to learn.
-Docker (Alex) - Docker is a containerization software to deliver OS-level virtualization similar to that of a virtual machine. The advantage is that docker requires fewer resources by using the host machine’s operating systems services instead of virtualizing an entire guest operating system for each virtual machine. This not only delivers enhanced performance, but also portability, where a docker container is essentially guaranteed to run across all hardware identically if configured properly. This eliminates the issue of software working improperly on deployment but functioning on developer machines, or vice versa. In our case, we only use docker for deployment, as the learning curve would slow down development. Instead, we use Python’s built-in virtual environment module to guarantee all our machines have an identical Python environment and dependencies, which is enough for the scope of our project with our small team. Our pipeline involves pulling the code from the launch-test branch in our GitHub repository, building it using a custom docker-compose.yml file, and pushing this image to a GitHub Container Registry assigned to my account. Then, I SSH into the server, use docker pull to save the latest image to the machine, stop the current container, and start a new container based on the newest image. We use a special docker run command that exposes port 80 and creates a volume mapping. Exposing port 80 allows anyone with access to the internet to access the site over an HTTP connection. The volume mapping is created to allow the container to access the database stored on the server, allowing the data to persist. This means the database containing all user information, posts, and plant information is not wiped every time we deploy a new image due to making changes in the code. Once the docker run command is run, the website is deployed and accessible to the public.
-DigitalOcean (Alex) - DigitalOcean is the hosting provider we have selected for our project due to their reputation of being user-friendly and having good customer support. We use a Droplet, DigitalOcean’s name for a Virtual Private Server (VPS). Our Droplet is running Ubuntu 22.04, on which we have installed the Docker engine, which runs the container containing our code. We access this server via SSH, authenticated via an Ed25519 SSH key. Via SSH, we can update the software, manage dependencies, and run the container which runs our code.
-GitHub (Alex) - GitHub is a multi-use developer platform with a deep set of features. Our project utilizes the repository syncing capability, to synchronize our code and handle merging into the main branch, to host our containers in GitHub Container Registry, and GitHub’s issue tracker to assign tasks and keep progress going consistently. 
-Pillow (Haley B) - Pillow is the only extra Python library we added. It is a version of a different library called PIL (Python Imaging Library). We use this extra library to add image-processing capabilities to our Python code. It supports a large range of file types as well, including JPEG, PNG, GIF, BMP, and TIFF. We want to have things like profile pictures and plant images, so a library for image processing was necessary. After some research, this was the one we settled on due to the ease of use and large number of supporting file types.
+
++ Django (Haley B) - Django is a Python-based, high-level web framework. It has its own URL routing, database models, templates, file structure, and testing system. These ease-of-use features allow us to focus more on the logistics side of how things should run rather than how to get them running. Django comes with a built-in admin panel as well, allowing us to easily access necessary (otherwise encrypted) database information. Some of this information isn’t viewable, such as passwords or other sensitive data. On that note, Django also offers a lot of security features that help protect against things like SQL injections. Django, being free and Python-based, also has a large fanbase of users who made tutorials on various functionalities provided by Django as well as how to build simple websites with it. This drew us in because we know that if we run across an issue, we will most likely be able to find the solution somewhere on the internet. In addition to that, using web frameworks is something that nobody in the group had experience with. We thought it would be a good idea to learn.
+
++ Docker (Alex) - Docker is a containerization software to deliver OS-level virtualization similar to that of a virtual machine. The advantage is that docker requires fewer resources by using the host machine’s operating systems services instead of virtualizing an entire guest operating system for each virtual machine. This not only delivers enhanced performance, but also portability, where a docker container is essentially guaranteed to run across all hardware identically if configured properly. This eliminates the issue of software working improperly on deployment but functioning on developer machines, or vice versa. In our case, we only use docker for deployment, as the learning curve would slow down development. Instead, we use Python’s built-in virtual environment module to guarantee all our machines have an identical Python environment and dependencies, which is enough for the scope of our project with our small team. Our pipeline involves pulling the code from the launch-test branch in our GitHub repository, building it using a custom docker-compose.yml file, and pushing this image to a GitHub Container Registry assigned to my account. Then, I SSH into the server, use docker pull to save the latest image to the machine, stop the current container, and start a new container based on the newest image. We use a special docker run command that exposes port 80 and creates a volume mapping. Exposing port 80 allows anyone with access to the internet to access the site over an HTTP connection. The volume mapping is created to allow the container to access the database stored on the server, allowing the data to persist. This means the database containing all user information, posts, and plant information is not wiped every time we deploy a new image due to making changes in the code. Once the docker run command is run, the website is deployed and accessible to the public.
+
++ DigitalOcean (Alex) - DigitalOcean is the hosting provider we have selected for our project due to their reputation of being user-friendly and having good customer support. We use a Droplet, DigitalOcean’s name for a Virtual Private Server (VPS). Our Droplet is running Ubuntu 22.04, on which we have installed the Docker engine, which runs the container containing our code. We access this server via SSH, authenticated via an Ed25519 SSH key. Via SSH, we can update the software, manage dependencies, and run the container which runs our code.
+
++ GitHub (Alex) - GitHub is a multi-use developer platform with a deep set of features. Our project utilizes the repository syncing capability, to synchronize our code and handle merging into the main branch, to host our containers in GitHub Container Registry, and GitHub’s issue tracker to assign tasks and keep progress going consistently. 
+
++ Pillow (Haley B) - Pillow is the only extra Python library we added. It is a version of a different library called PIL (Python Imaging Library). We use this extra library to add image-processing capabilities to our Python code. It supports a large range of file types as well, including JPEG, PNG, GIF, BMP, and TIFF. We want to have things like profile pictures and plant images, so a library for image processing was necessary. After some research, this was the one we settled on due to the ease of use and large number of supporting file types.
 Python VENV (Haley B) - Due to some issues with getting Docker to work on everyone's computer, we instead decided to get everyone set up with a Python virtual environment. In this environment, we had everyone pip install the same things: Django and Pillow. Through this environment, we can test our website in a secluded space that is consistent across the team.
+
 Grading criteria (1 point): This section will be evaluated in terms of correctness, completeness, thoroughness, consistency, coherence, and adequate use of language.
 
 ## 5. Learning/training (Alyssa)
