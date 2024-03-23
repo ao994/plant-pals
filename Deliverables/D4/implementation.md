@@ -272,7 +272,13 @@ The team also learned how to work together better by the second release. The fir
 
 Grading criteria (2 points): Adequate reflection about problems and solutions, clear description with adequate use of language. 
 ## 11. Demo (Alex)
+
 Include a link to a video showing the system working.
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=UfeOeVB8Sc0
+" target="_blank"><img src="http://img.youtube.com/vi/UfeOeVB8Sc0/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
+
 Grading criteria (6 points): This section will be graded based on the quality of the video and on the evidence that the features are running as expected. Additional criteria are the relevance of the demonstrated functionalities, the correctness of the functionalities, and the quality of the developed system from the external point of view (user interface).
 
 
