@@ -169,9 +169,9 @@ Cleanup (removes the added database information to prepare for next test/ confir
 
 
 Plant model aside, we have a test case for every model we have made (posts, replies, and profile). 
-![alt text][test4]
 
 Below are the test results:
+![alt text][test4]
 
 Each ‘.’ represents a successful run of a single test case. There are four ‘.’ because we have four test cases. If one presented an error, the ‘.’ would be replaced with an ‘E’. If one presented a failure, the ‘.’ would be replaced with an ‘F’. The results presented show successful test runs.
 
