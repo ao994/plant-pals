@@ -26,11 +26,13 @@ Print screen:
 
 
 
-Requirement: As a community member, I want to post to a discussion so that I can ask questions to more experienced gardeners
-Issue: https://github.com/ao994/plant-pals/issues/30
-Pull request: https://github.com/ao994/plant-pals/pull/62
-Implemented by: Haley Berger / Karissa Smallwood
-Approved by: Alyssa Ortiz
+#### Requirement: 
+> "As a community member, I want to post to a discussion so that I can ask questions to more experienced gardeners"
+- Issue: https://github.com/ao994/plant-pals/issues/30
+- Pull request: https://github.com/ao994/plant-pals/pull/62
+	- Implemented by: Haley Berger / Karissa Smallwood
+	- Approved by: Alyssa Ortiz
+
 Print screen:
  
 
@@ -38,58 +40,65 @@ Print screen:
 
 
 
-Requirement: As an experienced gardener, I want to find and respond to discussions so that I can help people get into plant ownership. 
-Issue: https://github.com/ao994/plant-pals/issues/34#issue-2131157582
-Pull request:
-https://github.com/ao994/plant-pals/pull/2 (initial creation)
-https://github.com/ao994/plant-pals/pull/84#issue-2168008479 (edit viewing)
-Implemented by: Haley Berger / Karissa Smallwood
-Approved by: Alex King & Karissa Smallwood
+#### Requirement: 
+> "As an experienced gardener, I want to find and respond to discussions so that I can help people get into plant ownership."
+- Issue: https://github.com/ao994/plant-pals/issues/34#issue-2131157582
+- Pull requests: https://github.com/ao994/plant-pals/pull/2 (initial creation), 
+https://github.com/ao994/plant-pals/pull/84 (edit viewing)
+	- Implemented by: Haley Berger / Karissa Smallwood
+	- Approved by: Alex King & Karissa Smallwood
+
 Print screen:
 
 
 
 
-Requirement: As a user, I want to have a decorated user profile to make my profile match the website.
-Issue:  https://github.com/ao994/plant-pals/issues/41
-Pull request: https://github.com/ao994/plant-pals/pull/58
-Implemented by: Haley Kloss
-Approved by: Haley Berger
+#### Requirement: 
+> "As a user, I want to have a decorated user profile to make my profile match the website."
+- Issue:  https://github.com/ao994/plant-pals/issues/41
+- Pull request: https://github.com/ao994/plant-pals/pull/58
+	- Implemented by: Haley Kloss
+	- Approved by: Haley Berger
+
 Print screen: 
 
 
 
 
-Requirement: As a database manager, I want to be able to add/remove/edit plants so that information stays up-to-date and is easily manageable.
-Issue: https://github.com/ao994/plant-pals/issues/38
-Pull request: https://github.com/ao994/plant-pals/pull/82
-Implemented by: Alyssa Ortiz
-Approved by: Karissa Smallwood
+#### Requirement: 
+> "As a database manager, I want to be able to add/remove/edit plants so that information stays up-to-date and is easily manageable."
+- Issue: https://github.com/ao994/plant-pals/issues/38
+- Pull request: https://github.com/ao994/plant-pals/pull/82
+	- Implemented by: Alyssa Ortiz
+	- Approved by: Karissa Smallwood
+
 Print screen:
 
 
 
 
-Requirement: As an admin, I want to easily moderate so the website stays informative and good-natured.
-Issue: https://github.com/ao994/plant-pals/issues/35
-Pull request: 
-https://github.com/ao994/plant-pals/pull/2 (moderation for discussion board)
+#### Requirement: 
+> "As an admin, I want to easily moderate so the website stays informative and good-natured."
+- Issue: https://github.com/ao994/plant-pals/issues/35
+- Pull requests: https://github.com/ao994/plant-pals/pull/2 (moderation for discussion board), 
 https://github.com/ao994/plant-pals/pull/82 (moderation for plants)
-Implemented by: Haley Berger / Alyssa Ortiz
-Approved by: Alex King
+	- Implemented by: Haley Berger / Alyssa Ortiz
+	- Approved by: Alex King
+
 Print screen: 
 
 
 
 
 
-Requirement: As an older person without much technological savvy, I want to be able to navigate around the website easily so that I can do what I need to without getting confused. 
-Issue: https://github.com/ao994/plant-pals/issues/32 
-Pull request: 
-https://github.com/ao994/plant-pals/pull/2 (initial upload)
+#### Requirement: 
+> "As an older person without much technological savvy, I want to be able to navigate around the website easily so that I can do what I need to without getting confused."
+- Issue: https://github.com/ao994/plant-pals/issues/32 
+- Pull requests: https://github.com/ao994/plant-pals/pull/2 (initial upload), 
 https://github.com/ao994/plant-pals/pull/62 (formatting edit)
-Implemented by: Haley Berger
-Approved by: Andrew Ortega
+	- Implemented by: Haley Berger
+	- Approved by: Andrew Ortega
+
 Print screen:
 
 
@@ -97,11 +106,12 @@ Print screen:
 
 
 
-Requirement: Configure Docker on server
-Issue: https://github.com/ao994/plant-pals/issues/4 
-Pull request: https://github.com/ao994/plant-pals/pull/85 
-Implemented by: Alex Kingt
-Approved by: Haley Berger
+#### Requirement: Configure Docker on server
+- Issue: https://github.com/ao994/plant-pals/issues/4 
+- Pull request: https://github.com/ao994/plant-pals/pull/85 
+	- Implemented by: Alex Kingt
+	- Approved by: Haley Berger
+   
 Print screen: 
 
 
