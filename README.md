@@ -7,16 +7,24 @@ These instructions will get you a copy of the project up and running on your loc
 Run the following commands in the command line: 
 
 Windows:
-py -m venv .venv
-.venv\Scripts\activate
-pip install django
-pip install pillow
-python manage.py makemigrations
-python manage.py migrate
-git clone https://github.com/ao994/plant-pals.git
-cd plant-pals
-cd plant-pals
-python manage.py runserver
+   - py -m venv .venv
+   
+   - .venv\Scripts\activate
+   
+   - pip install django
+   
+   - pip install pillow
+   
+   - python manage.py makemigrations
+   
+   - python manage.py migrate
+   
+   - git clone https://github.com/ao994/plant-pals.git
+   
+   - cd plant-pals
+   
+   - python manage.py runserver
+
 
 
 ### Prerequisites
