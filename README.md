@@ -1,10 +1,13 @@
 # Plant Pals
 
+For plant owners who want to connect with a community and get help with plant care, Plant Pals is a website that connects the plant community and offers reliable insights into plant care! Lack of community and information in houseplant ownership affects plant owners; the impact of which is isolation and ineffective plant care that results in plants dying and preventable deaths. Plant Pals helps plant owners grow (and not kill their plants) by providing information and a community that gives everyone a green thumb!
+
+Interested? Visit our website at: [http://64.23.151.143/](http://64.23.151.143/) !
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
-Run the following commands in the command line: 
+Run the following commands in the command line after download: 
 
 Windows:
    - py -m venv .venv
