@@ -12,6 +12,7 @@ https://github.com/ao994/plant-pals/pull/2 (initial upload)
 https://github.com/ao994/plant-pals/pull/70 (formatted upload)
 	- Implemented by: Haley Berger / Andrew Ortega
 	- Approved by: Alyssa Ortiz (but uploaded by Haley Berger to get all base files uploaded)
+
 Print screen:
 ![alt text][story1]
 
