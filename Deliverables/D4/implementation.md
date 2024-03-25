@@ -13,7 +13,7 @@ https://github.com/ao994/plant-pals/pull/70 (formatted upload)
 	- Implemented by: Haley Berger / Andrew Ortega
 	- Approved by: Alyssa Ortiz (but uploaded by Haley Berger to get all base files uploaded)
 Print screen:
-
+![alt text][story1]
 
 
 
@@ -25,8 +25,7 @@ Print screen:
 	- Approved by: Alyssa Ortiz
 
 Print screen:
-![alt text][story1]
-
+![alt text][story2]
 
 
 #### Requirement: 
@@ -38,8 +37,7 @@ https://github.com/ao994/plant-pals/pull/84 (edit viewing)
 	- Approved by: Alex King & Karissa Smallwood
 
 Print screen:
-![alt text][story2]
-
+![alt text][story3]
 
 
 #### Requirement: 
@@ -50,7 +48,7 @@ Print screen:
 	- Approved by: Haley Berger
 
 Print screen: 
-![alt text][story3]
+![alt text][story4]
 
 
 
@@ -62,8 +60,7 @@ Print screen:
 	- Approved by: Karissa Smallwood
 
 Print screen:
-![alt text][story4]
-
+![alt text][story5]
 
 
 #### Requirement: 
@@ -75,8 +72,7 @@ https://github.com/ao994/plant-pals/pull/82 (moderation for plants)
 	- Approved by: Alex King
 
 Print screen: 
-![alt text][story5]
-
+![alt text][story6]
 
 
 #### Requirement: 
@@ -88,7 +84,7 @@ https://github.com/ao994/plant-pals/pull/62 (formatting edit)
 	- Approved by: Andrew Ortega
 
 Print screen:
-![alt text][story6]
+![alt text][story7]
 
 
 
@@ -99,7 +95,8 @@ Print screen:
 	- Approved by: Haley Berger
    
 Print screen: 
-![alt text][story7]
+![alt text][story8]
+
 
 [story1]: https://github.com/ao994/plant-pals/blob/alex-development/Deliverables/D4/story1.png
 [story2]: https://github.com/ao994/plant-pals/blob/alex-development/Deliverables/D4/story2.png
