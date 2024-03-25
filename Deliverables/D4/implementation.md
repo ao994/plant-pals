@@ -176,8 +176,7 @@ Each ‘.’ represents a successful run of a single test case. There are four �
 
 
 ## 5. Learning/Training (Alyssa)
-Describe the strategies employed by the team to learn the adopted technologies. 
-Grading criteria (1 point): This section will be evaluated in terms of correctness, completeness, thoroughness, consistency, coherence, and adequate use of language.
+Our team employed several different technologies in creating our project. Each time we would introduce a new technology, we would find the documentation for it, as well as several other outside resources such as YouTube videos or tutorials explaining how to use it and get started. This would be posted in a dedicated “resources” discord channel, where everyone would be expected to review these resources and ask any questions if they still did not understand. For large changes or technology adoptions, we had meetings to make sure everyone understood and could use this technology correctly. Additional group presentations were provided for more complicated topics and to keep everyone on the same page.
 
 
 
