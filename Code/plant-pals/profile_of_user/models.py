@@ -82,3 +82,4 @@ class Plant(models.Model):
         super().delete()
 
 
+
