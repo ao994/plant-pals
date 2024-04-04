@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, HttpResponse, Http404
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth  import authenticate,  login, logout
-from .models import Post, Replie, Profile, Plant
+from .models import Post, Replie, Profile, DailyTask
 from .forms import ProfileForm, PlantForm
 from django.contrib.auth.decorators import login_required
 
@@ -136,46 +136,95 @@ def UserLogout(request):
 @login_required(login_url='/login')
 
 # for profile page
+@login_required
 def myprofile(request):
     profile_page = "profile.html"
     profile_redirect = '/myprofile'
 
     profile, created = Profile.objects.get_or_create(user=request.user)
 
+    # check request type; make sure proper
     if request.method == "POST":
+        # set variables commonly used
         avatar_form = ProfileForm(request.POST, request.FILES, instance=profile)
         plant_form = PlantForm(request.POST, request.FILES, instance=profile)
 
+        # if avatar is being changed
         if 'avatar_submit' in request.POST:
             if avatar_form.is_valid():
                 avatar_form.save()
                 messages.success(request, 'Profile picture updated successfully!')
                 return redirect(profile_redirect)
 
+        # if plant is being changed/added
         elif 'plant_submit' in request.POST:
             if plant_form.is_valid():
                 plant_form.save()
                 messages.success(request, 'Plant information updated successfully!')
+                return redirect(profile_redirect)
 
-                # Error notice: Reverse for 'myprofile' not found. 'myprofile' is not a valid view function or pattern name.
-                   # this just means you forgot the '/' before myprofile!
-                return redirect('/myprofile')
-
-        # Check if the remove button for Plant Image 1 is clicked
+        # if the plant is being removed
         elif 'remove_plant_image_1' in request.POST:
-            # Set plant_image_1 to None and save the profile
             profile.plant_image_1 = None
             profile.save()
             messages.success(request, 'Plant image removed successfully!')
-            return redirect(profile_redirect)    
-        
+            return redirect(profile_redirect)
+
+        # if the watering schedule is being edited
+        elif 'daily_tasks_submit' in request.POST:
+            for day in range(7):
+                task_description = request.POST.get(f'task_{day}', '')
+
+                # default check to unchecked
+                completed = request.POST.get(f'completed_{day}', False)
+                
+                # set checked to on if true
+                completed = completed == 'on'
+                task_date = calculate_task_date(day)
+                daily_task, created = DailyTask.objects.get_or_create(user=request.user, task_date=task_date)
+                daily_task.task_description = task_description
+                daily_task.completed = completed
+                daily_task.save()
+            messages.success(request, 'Daily tasks updated successfully!')
+            return redirect(profile_redirect)
+
+    # otherwise keep as is
     else:
         avatar_form = ProfileForm(instance=profile)
         plant_form = PlantForm(instance=profile)
+        current_week_tasks = []
+        for day in range(7):
+            task_date = calculate_task_date(day)
+            daily_task, created = DailyTask.objects.get_or_create(user=request.user, task_date=task_date)
+            current_week_tasks.append(daily_task)
 
-    return render(request, profile_page, {'avatar_form': avatar_form, 'plant_form': plant_form, 'created': created})
+    # return/render the page
+    return render(request, profile_page, {'avatar_form': avatar_form, 'plant_form': plant_form, 'created': created, 'current_week_tasks': current_week_tasks})
 
-#for search page
-def search(request):
-    # to do
-    
+##############################################################################
+# Search function view
+##############################################################################
+def search (request):
+    #defines what happens when there is a POST request
+    if request.method == "POST":
+        title = request.POST.get("q")
+        return render(request,'new_template.html', { 'title' : title })
+
+
+    #defines what happens when there is a GET request
+    else:
+        return render(request,'search.html')
+
+
+
+
+
+#################### ADDITIONAL FUNCTIONS
+
+# calculates current date to determine what week needs to be displayed
+def calculate_task_date(day):
+    from datetime import datetime, timedelta
+    today = datetime.today()
+    start_of_week = today - timedelta(days=today.weekday())
+    task_date = start_of_week + timedelta(days=day)
+    return task_date

@@ -2,12 +2,14 @@
 
 {% block title %} Search {% endblock %}
 
+{% block body %} 
 
-{% block body %}
 {% load static %}
 
-<p>This is where the search bar will be.</p>
+<form action="{% url 'enc:search' %}" method="POST">
+    {% csrf_token %}
+    <input class="search" type="text" name="q" placeholder="Search">
+    <input type="submit" value="Submit">
+  </form> 
 
-<p>This is where the results will be.</p>
-
-{% endblock %}
+  {% end block %}  
