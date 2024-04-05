@@ -17,4 +17,4 @@ jobs:
         with: 
             registry: ghcr.io
             username: ${{secrets.GH_USERNAME}}
-            password: ${{secrets.GHCR_PW}}
+            password: ${{secrets.GH_PAT}}
