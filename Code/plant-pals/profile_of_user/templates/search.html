@@ -19,7 +19,7 @@
 {% if search_result %}
     <ul>
     {% for result in search_result %}
-        <li><a href="search/{{ result.scientific_name }}/">{{ result.scientific_name }}</a></li>
+        <li><a href="{{ result.scientific_name }}/">{{ result.scientific_name }}</a></li>
     {% endfor %}
     </ul>
 {% else %}

@@ -202,7 +202,7 @@ def myprofile(request):
     return render(request, profile_page, {'avatar_form': avatar_form, 'plant_form': plant_form, 'created': created, 'current_week_tasks': current_week_tasks})
 
 ##############################################################################
-# Search function view
+# Search views
 ##############################################################################
 def search(request):
     # sets html template file
@@ -217,6 +217,16 @@ def search(request):
     #defines what happens when there is a GET request
     else:
         return render(request,search_page)
+
+
+def search_result(request, scientific_name):
+    #sets template file
+    result_page = "search_result.html"
+
+    plant = Plant.objects.get(scientific_name=scientific_name)
+
+    return render(request, result_page, {'plant':plant })
+
 
 
 #################### ADDITIONAL FUNCTIONS

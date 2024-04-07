@@ -19,4 +19,5 @@ urlpatterns = [
     path("logout/", views.UserLogout, name="Logout"),
     path("myprofile/", views.myprofile, name="Myprofile"),
     path("search/", views.search, name="Search"),
+    path("search/<scientific_name>/", views.search_result, name="Search Result"),
 ]
