@@ -10,7 +10,7 @@
 {% block body %} 
 
 
-<form action="{% url 'Search' %}" method="POST">
+<form role="search" action="{% url 'Search' %}" method="POST">
     {% csrf_token %}
     <input class="search" type="text" name="q" placeholder="Search">
     <input type="submit" value="Submit">
