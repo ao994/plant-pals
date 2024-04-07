@@ -18,5 +18,5 @@ urlpatterns = [
     path("login/", views.UserLogin, name="Login"),
     path("logout/", views.UserLogout, name="Logout"),
     path("myprofile/", views.myprofile, name="Myprofile"),
-    path("search/", views.search, name="search"),
+    path("search/", views.search, name="Search"),
 ]
