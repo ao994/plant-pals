@@ -1,12 +1,19 @@
-{% extends 'search.html' %}
+{% extends 'basic.html' %}
 
 {% load static %}
 
 
 {% block body %} 
 
-<p>{{ plant.scientific_name }}</p>
-
+<p>Scientific Name: {{ plant.scientific_name }}</p>
+<p>Common Name: {{ plant.common_name }}</p>
+<p>Growth Habit: {{ plant.growth_habit }}</p>
+<p>Duration: {{ plant.duration }}</p>
+<p>Sun Requirements: {{ plant.sun_requirements }}</p>
+<p>Water: {{ plant.water }}</p>
+<p>Low Tempurature Threshold (F): {{ plant.temp_low_F }}</p>
+<p>High Tempurature Threshold (F):{{ plant.temp_high_F }}</p>
+<p>{{ plant.image }}</p>
 
 
 {% endblock %}
