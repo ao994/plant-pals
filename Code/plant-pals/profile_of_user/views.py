@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, HttpResponse, Http404
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth  import authenticate,  login, logout
-from .models import Post, Replie, Profile, DailyTask
+from .models import Post, Replie, Profile, DailyTask, Plant
 from .forms import ProfileForm, PlantForm
 from django.contrib.auth.decorators import login_required
 
@@ -204,19 +204,19 @@ def myprofile(request):
 ##############################################################################
 # Search function view
 ##############################################################################
-def search (request):
+def search(request):
+    # sets html template file
+    search_page = "search.html"
+    
     #defines what happens when there is a POST request
     if request.method == "POST":
-        title = request.POST.get("q")
-        return render(request,'new_template.html', { 'title' : title })
-
+        plant = request.POST.get("q")
+        search_result = Plant.objects.filter(common_name__contains=plant)
+        return render(request, search_page, {'Name':search_result })
 
     #defines what happens when there is a GET request
     else:
-        return render(request,'search.html')
-
-
-
+        return render(request,search_page)
 
 
 #################### ADDITIONAL FUNCTIONS

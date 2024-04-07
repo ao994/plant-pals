@@ -43,6 +43,10 @@
                         <a class="nav-link" href="/">Terra Talk<span class="sr-only"></span></a>
                     </li>
 
+                    <li class="nav-item {% block searchactive %} {% endblock searchactive %} ">
+                        <a class="nav-link" href="/search">Search Database</a>
+                    </li>
+
                     <!-- Navbar ext. if user is logged in -->
                     {% if user.is_authenticated %}
                     <ul class="navbar-nav mr-2">
