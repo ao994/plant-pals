@@ -212,7 +212,7 @@ def search(request):
     if request.method == "POST":
         plant = request.POST.get("q")
         search_result = Plant.objects.filter(common_name__icontains=plant)
-        return render(request, search_page, {'Name':search_result })
+        return render(request, search_page, {'result':search_result })
 
     #defines what happens when there is a GET request
     else:
