@@ -16,6 +16,10 @@
     <!-- CSS stylesheet reference -->
     {% load static %}
     <link rel="stylesheet" href="{% static 'profile_of_user/style.css' %}">
+    
+    <!-- load favicon -->
+    <link rel="icon" type="image/png" href="{% static 'profile_of_user/images/plant_icon.png' %}">
+
 </head>
 
 <body>
@@ -37,6 +41,10 @@
                     <!-- Navbar sect. under any case -->
                     <li class="nav-item {% block homeactive %} {% endblock homeactive %} ">
                         <a class="nav-link" href="/">Terra Talk<span class="sr-only"></span></a>
+                    </li>
+
+                    <li class="nav-item {% block searchactive %} {% endblock searchactive %} ">
+                        <a class="nav-link" href="/search">Search Database</a>
                     </li>
 
                     <!-- Navbar ext. if user is logged in -->
