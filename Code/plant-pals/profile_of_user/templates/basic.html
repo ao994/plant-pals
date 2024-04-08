@@ -36,53 +36,60 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <div class = "container-fluid"> <!-- Makes search bar stay on the right of the navbar  -->
+                    <ul class="navbar-nav mr-auto">
 
-                    <!-- Navbar sect. under any case -->
-                    <li class="nav-item {% block homeactive %} {% endblock homeactive %} ">
-                        <a class="nav-link" href="/">Terra Talk<span class="sr-only"></span></a>
-                    </li>
-
-                    <li class="nav-item {% block searchactive %} {% endblock searchactive %} ">
-                        <a class="nav-link" href="/search">Search Database</a>
-                    </li>
-
-                    <!-- Navbar ext. if user is logged in -->
-                    {% if user.is_authenticated %}
-                    <ul class="navbar-nav mr-2">
-
-                      <!-- profile page nav header -->
-                        <li class="nav-item {% block profileactive %} {% endblock profileactive %}">
-                            <a class="nav-link" href="/myprofile">Botanic Bio</a>
+                        <!-- Navbar sect. under any case -->
+                        <li class="nav-item {% block homeactive %} {% endblock homeactive %} ">
+                            <a class="nav-link" href="/">Terra Talk<span class="sr-only"></span></a>
                         </li>
 
-                      <!-- logout nav header -->
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" role="button"
-                              data-toggle="dropdown">{{request.user}}</a>
+                        <li class="nav-item {% block searchactive %} {% endblock searchactive %} ">
+                            <a class="nav-link" href="/search">Search Database</a>
+                        </li>
 
-                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="/logout">Logout</a>
-                              <a class="dropdown-item"> <span>&#127800</span> </a>
-                          </div>
-                      </li>
+                        <!-- Navbar ext. if user is logged in -->
+                        {% if user.is_authenticated %}
+                        <ul class="navbar-nav mr-2">
 
+                        <!-- profile page nav header -->
+                            <li class="nav-item {% block profileactive %} {% endblock profileactive %}">
+                                <a class="nav-link" href="/myprofile">Botanic Bio</a>
+                            </li>
+
+                        <!-- logout nav header -->
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" role="button"
+                                data-toggle="dropdown">{{request.user}}</a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/logout">Logout</a>
+                                <a class="dropdown-item"> <span>&#127800</span> </a>
+                            </div>
+                        </li>
+
+                        </ul>
+
+                        <!-- Navbar ext. if user is not logged in. -->
+                        {% else %}
+                        <!-- register nav header -->
+                        <li class="nav-item {% block registeractive %} {% endblock registeractive %}">
+                            <a class="nav-link" href="/register">Sprout Signup</a>
+                        </li>
+
+                        <!-- login nav header -->
+                        <li class="nav-item {% block loginactive %} {% endblock loginactive %}">
+                            <a class="nav-link" href="/login">Leaf Login</a>
+                        </li>
+                        {% endif %}
                     </ul>
+                </div>
 
-                    <!-- Navbar ext. if user is not logged in. -->
-                    {% else %}
-                    <!-- register nav header -->
-                    <li class="nav-item {% block registeractive %} {% endblock registeractive %}">
-                        <a class="nav-link" href="/register">Sprout Signup</a>
-                    </li>
-
-                    <!-- login nav header -->
-                    <li class="nav-item {% block loginactive %} {% endblock loginactive %}">
-                        <a class="nav-link" href="/login">Leaf Login</a>
-                    </li>
-                    {% endif %}
-
-                </ul>
+                <form class="d-flex" role="search" action="{% url 'Search' %}" method="POST">
+                    {% csrf_token %}
+                    <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">{% csrf_token %}Search</button>
+                </form>
             </div>
         </nav>
     </header>
