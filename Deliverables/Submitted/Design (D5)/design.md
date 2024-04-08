@@ -10,7 +10,11 @@ Discussion boards are a standout feature of the website, allowing users to build
 
 ## **2\. Architecture**
 
+![architecture](architecture.png)
+
 ## **3\. Class diagram**
+
+![class diagram](class_diagram.png)
 
 ## **4\. Sequence diagram**
 
@@ -48,14 +52,16 @@ Alternate Scenario: An unregistered user tries to respond
 
 -   System asks user to sign in
 
+![sequence diagram](sequence_diagram.png)
+
 ## **5\. Design Patterns**
 
 Login Structure - Behavioral (Template):
 <https://github.com/ao994/plant-pals/blob/main/Code/plant-pals/profile_of_user/views.py>
-
+![login structure](login_structure.png)
 Discussion Board Reply Structure - Structural (Composite): 
 <https://github.com/ao994/plant-pals/blob/main/Code/plant-pals/profile_of_user/models.py>
-
+![discussion structure](discussion_structure.png)
 Reply has two composites: Post and User. It also has four leaves: DateTimeField, CharField, ImageField, and AutoField. 
 
 Post has one composite: User. It has four leaves as well:  DateTimeField, CharField, ImageField, and AutoField. 
