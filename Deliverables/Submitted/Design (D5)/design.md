@@ -79,11 +79,11 @@ The first SOLID Principle is the Single-responsibility Principle, which states t
 
 The second SOLID Principle is the Open-closed Principle, which states that objects and entities can be extended but not modified (open to extension, closed to modification).
 
--- The Plant class has all data fields present as a template. The database then uses that template for each new plant object to be added. If needed, we could easily make a subclass that extends the plant class for specific types of plants that require additional information, which add new fields to the templates. This would extend but not modify the class plant.
+- The Plant class has all data fields present as a template. The database then uses that template for each new plant object to be added. If needed, we could easily make a subclass that extends the plant class for specific types of plants that require additional information, which add new fields to the templates. This would extend but not modify the class plant.
 
 The third SOLID Principle is the Liskov Substitution Principle, which states that a subclass has all the properties of its parent class (you could substitute a subclass for its parent class).
 
--- The Liskov Substitution Principle is not currently implemented in our website, as we do not yet have any subclasses. One subclass we may implement in the future is a subclass of Replie for AdminReplie. This would be the same as Replie, except it would only be viewable by certain people with the correct permissions. This subclass would have the same return as its superclass, and could easily be swapped into any situation where the superclass was used. 
+- The Liskov Substitution Principle is not currently implemented in our website, as we do not yet have any subclasses. One subclass we may implement in the future is a subclass of Replie for AdminReplie. This would be the same as Replie, except it would only be viewable by certain people with the correct permissions. This subclass would have the same return as its superclass, and could easily be swapped into any situation where the superclass was used. 
 
 The fourth SOLID Principle is the Interface Segregation Principle, which states that there should be no unnecessary dependencies, where clients are forced to connect to interfaces/functions they don't use.
 
