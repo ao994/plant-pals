@@ -12,6 +12,8 @@ Discussion boards are a standout feature of the website, allowing users to build
 
 ![architecture](architecture.png)
 
+We have a single database where everything is stored. This holds user profiles info, discussion board info, and plant database info. A template folder holds all of our HTML files which then connect to designated CSS files and Javascript files. An image folder is also associated in order to keep images properly organized. Some of these are split up into a separate folder titled "static" which is then split between two sub-folders, admin and profile_of_users. Admin relates the Django admin page and profile_of_user related to our users specific profiles. We do not make direct edits to these files. The ones that are not static are the files we do make changes to; this includes the templates folder as we might add new visible features to our website through HTML as well as another image folder that does have pictures that constantly get added to, unlike the ones in the static folder that do not and are not supposed to be changed.
+
 ## **3\. Class diagram**
 
 ![class diagram](class_diagram.png)
@@ -61,7 +63,8 @@ Login Structure - Behavioral (Template):
 ![login structure](login_structure.png)
 Discussion Board Reply Structure - Structural (Composite): 
 <https://github.com/ao994/plant-pals/blob/main/Code/plant-pals/profile_of_user/models.py>
-![discussion structure](discussion_structure.png)
+![discussion structure](discussion_board.png)
+
 Reply has two composites: Post and User. It also has four leaves: DateTimeField, CharField, ImageField, and AutoField. 
 
 Post has one composite: User. It has four leaves as well:  DateTimeField, CharField, ImageField, and AutoField. 
