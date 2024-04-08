@@ -1,14 +1,18 @@
-#### 1\. Description
+# D.5 Design
+
+---
+
+## **1\. Description**
 
 The Plant Pals website will be centered around three key functionalities: profiles, a plant database, and user discussion boards. When users make an account with the website, they will create a unique username and password. Once this is completed, they can then activate their account by verifying it with their email. The website will also include a password recovery system, in case the user forgets their password and wants to log back in. On an account, a user can create a profile of their plants with names and pictures of each. All of these pieces of information can be changed, updated, or removed later as long as the user is signed in. This information must also be secure, as it includes personal details. A user can also create a plant watering schedule if desired. Plant Pals may also include a follow, or 'Pal', feature. The plant database is an essential feature of the Plant Pals website. The database will contain the essential information on how to care for your plants, such as light requirements, watering needs, and optimal humidity levels. This data is searchable with an easy-to-use search engine that provides accurate information. There is a feedback feature to report inaccuracies or request additional information be added. A user can access the search engine whether or not they are signed into an account. 
 
 Discussion boards are a standout feature of the website, allowing users to build a community. Signed-in users can make dashboards for broad subjects. On these dashboards, these users can also make posts asking questions, giving plant updates, or sharing information. Posts have comments sections, where logged-in users can make comments about the post or even other comments with answers, further questions, or other contributions. A user who is not logged in cannot interact with a dashboard, but can observe it. These dashboards must be monitored by logged in moderators who can take down comments and posts that are not consistent with the values of the website. The dashboards as a whole provide a way for users to correspond with others who have similar interests to share valuable information and support.
 
-#### 2\. Architecture
+## **2\. Architecture**
 
-#### 3\. Class diagram 
+## **3\. Class diagram**
 
-#### 4\. Sequence diagram
+## **4\. Sequence diagram**
 
 Use Case: Comment on Discussion Boards\
 Actor: User\
@@ -44,7 +48,7 @@ Alternate Scenario: An unregistered user tries to respond
 
 -   System asks user to sign in
 
-####5\. Design Patterns
+## **5\. Design Patterns**
 
 Login Structure - Behavioral (Template):
 <https://github.com/ao994/plant-pals/blob/main/Code/plant-pals/profile_of_user/views.py>
@@ -58,7 +62,7 @@ Post has one composite: User. It has four leaves as well:  DateTimeField, CharF
 
 User has two leaves: DateTimeField and CharField.
 
-####6\. Design Principles
+## **6\. Design Principles**
 
 The first SOLID Principle is the Single-responsibility Principle, which states that a class should only have one job.
 
