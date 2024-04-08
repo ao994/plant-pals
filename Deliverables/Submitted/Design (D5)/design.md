@@ -63,7 +63,7 @@ Login Structure - Behavioral (Template):
 ![login structure](login_structure.png)
 Discussion Board Reply Structure - Structural (Composite): 
 <https://github.com/ao994/plant-pals/blob/main/Code/plant-pals/profile_of_user/models.py>
-![discussion structure](discussion_structure.png)
+![discussion structure](discussion_board.png)
 
 Reply has two composites: Post and User. It also has four leaves: DateTimeField, CharField, ImageField, and AutoField. 
 
