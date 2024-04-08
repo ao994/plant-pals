@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body{
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+    text-align: left;
+  }
+
+.result{
+  text-align: block;
+  color:#16a085;
+}
+
+
+input[type="submit"] {
+    margin-top: 28px;
+    width: 120px;
+    height: 32px;
+    background: #16a085;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+    cursor: pointer;
+    position: left;
+    left: 250px;
+  }
+  
+  
