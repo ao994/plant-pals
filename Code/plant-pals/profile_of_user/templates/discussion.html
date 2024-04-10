@@ -7,7 +7,8 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'profile_of_user/discussion.css' %}">
 
-<br>
+
+<!-- Main Header -->  
 <div class="container-fluid mt-5">
     <div class="col-md-12">
         <div class="card mb-4">
@@ -15,7 +16,7 @@
             <!-- Post Header -->  
             <div class="card-header">
                 <!-- User Profile Picture -->
-                <img src="/media/{{post.image}}" class="d-block ui-w-40 rounded-circle" alt="" width="40px" height="40px">
+                <img src="/media/{{post.image}}" class="d-block ui-w-40 rounded-circle" alt="Profile Picture" width="40px" height="40px">
                 <!-- Username -->
                 <div class="media-body ml-3" style="text-transform: uppercase;"> 
                     <a data-abc="true">{{post.user1}}</a>
