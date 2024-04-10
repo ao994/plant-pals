@@ -46,13 +46,23 @@ class Replie(models.Model):
     timestamp= models.DateTimeField(default=now)
     image = models.ImageField(upload_to="images",default="")
 
-    #makes sure the image is deleted when a reply is deleted
+    # makes sure the image is deleted when a reply is deleted
     def delete(self, using=None, keep_parents=False):
         self.image.delete()
         super().delete()
 
+### model for plant watering schedule
+class DailyTask(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    task_date = models.DateField()
+    task_description = models.CharField(max_length=100)
+    completed = models.BooleanField(default=False)
+
+    class Meta:
+        unique_together = ('user', 'task_date')
+
 ##############################################################################
-# Data entry model
+# Plant data entry model
 ##############################################################################
 class Plant(models.Model):
     """This model is for entering plants into the database."""
@@ -80,5 +90,9 @@ class Plant(models.Model):
     def delete(self, using=None, keep_parents=False):
         self.image.delete()
         super().delete()
+
+##############################################################################
+# Search function model
+##############################################################################
 
 

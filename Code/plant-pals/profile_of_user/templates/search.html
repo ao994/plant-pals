@@ -1,0 +1,32 @@
+{% extends 'basic.html' %}
+
+{% block title %} Search {% endblock %}
+{% block searchactive %} active {% endblock searchactive %}
+
+
+{% load static %}
+
+
+{% block body %} 
+<link rel="stylesheet" href="{% static '/profile_of_user/search.css' %}">
+
+
+    <form class = search-bar action="{% url 'Search' %}" method="POST">
+        {% csrf_token %}
+        <input class="search" type="text" name="q" placeholder="Search">
+        <input type="submit" value="Submit">
+    </form> 
+
+{% if search_result %}
+    <ul>
+    {% for result in search_result %}
+        <li class = 'result'>
+            <a href="{{ result.scientific_name }}/">{{ result.scientific_name }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Sorry, that plant does not seem to be searchable.  Maybe one of those pesky zombies got to them.</p>
+{% endif %}
+
+{% endblock %}
