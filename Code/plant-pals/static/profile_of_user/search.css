@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body{
+  font-family: "Klee One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  background-image: url("images/seamless_flower_opacity.png");
+  background-repeat: repeat;
+  background-position: center;
+  color: #215751;
+  }
+
+.result{
+  text-align: block;
+  color:#16a085;
+}
+
+input[type="submit"] {
+    margin-top: 28px;
+    width: 120px;
+    height: 32px;
+    background-color: #ADC178;
+    border: 4px;
+    border-color: white;
+    border-radius: 2px;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: left;
+    left: 250px;
+  }
+
+input[type="submit"]:hover {
+    border-bottom: 2px solid #16a085;
+    background-color: #16a085;
+    transition: 0.2s ease;
+  }
+  
+  
