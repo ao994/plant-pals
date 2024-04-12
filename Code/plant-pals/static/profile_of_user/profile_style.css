@@ -1,6 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #DDD;
+    background-image: url("images/seamless_flower_opacity.png");
+    background-repeat: repeat;
+    color: #215751;
+  }
 #prof_page{
     background-color: #6C584C;
-    color: #383c44;
+    padding: 10px;
+    color: #215751;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 #prof_page .btn-success{
@@ -36,6 +47,7 @@
     border-radius: 1%;
     padding: 30px;
     margin: 20px;
+    color: #215751;
 }
 #prof_page .prof-photo{
     background-color: #DDE5B6;
@@ -43,6 +55,7 @@
     border-radius: 1%;
     padding: 30px;
     margin: 20px;
+    color: #215751;
 }
 #prof_page .center-this {
     display: flex;
@@ -54,9 +67,31 @@
     border-radius: 1%;
     padding: 30px;
     margin: 20px;
+    color: #215751;
 }
                         
 #prof_page .center-it {
     display: flex;
     justify-content: center;
+}
+
+.container{
+    background-color: #6C584C;
+    padding: 10px;
+    color: #DDE5B6;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#daily_tasks_submit {
+    background-color: #adc178;
+    border: 4px important!;
+    border-color: white;
+}
+
+#water .btn:hover {
+    color: #fff;
+    background-color: #1F6321;
+    border-color: white;
+    transition: background-color 0.15s;
 }

@@ -10,8 +10,9 @@ body {
   margin: 0;
   padding: 0;
   background: #DDD;
-  color: #222;
-  background-image: url("images/2021-03-09-10-39-59-1800x1200.jpg");
+  background-image: url("images/seamless_flower.avif");
+  background-repeat: repeat;
+  color: #215751;
 }
 
 #login-box {
@@ -19,7 +20,7 @@ body {
   margin: 5% auto;
   width: 700px;
   height: 500px;
-  background: #AFE1AF;
+  background:#DDE5B6;
   border-radius: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
@@ -71,11 +72,11 @@ input[type="submit"] {
   margin-top: 28px;
   width: 120px;
   height: 32px;
-  background: #16a085;
-  border: none;
+  background-color: #ADC178;
   border-radius: 2px;
+  border-color: white;
   color: #FFF;
-  font-family: "Sofia", cursive;
+  font-family: "Klee One", cursive;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;

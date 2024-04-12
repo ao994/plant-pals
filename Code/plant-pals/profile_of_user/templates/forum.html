@@ -4,22 +4,25 @@
 {% block homeactive %} active {% endblock homeactive %}
 
 
-
 {% block body %}
 {% load static %}
 
 <!--
   where to put new reference to page stylesheet!!
   <link rel="stylesheet" href="{% static 'profile_of_user/NAME.css' %}">
+  <link rel="stylesheet" href="{% static 'profile_of_user/discussion.css' %}">
 -->
-<div class="container my-4">
-<div class="jumbotron">
+<link rel="stylesheet" href="{% static 'profile_of_user/discussion.css' %}">
+
+<div class="container my-4" id="contain">
+<div class="jumbotron" id="jumbo">
     <h1 class="display-4">PlantPals!</h1>
     <p class="lead">Welcome to our discussion forum. <br> <br> The problem of a lack of community and information in houseplant ownership affects plant owners; the impact of which is isolation and ineffective plant care that results in plants dying preventable deaths. <br> 
       Plant Pals helps plant owners grow (and not kill their plants) by providing information and a community that gives everyone a green thumb! <br> <br> Thank you and have a nice day!!</p>
     <p>You can also reply to others post by clicking on their post and replying them.</p>
       <button class="btn btn-primary btn-lg" data-target="#questions" data-toggle="modal" role="button">Add Post</button>
     </div>
+    <br>
     {% for post in posts %}
     <div class="container-fluid mt-10">
       <div class="row">
