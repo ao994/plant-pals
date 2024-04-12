@@ -108,16 +108,6 @@ a {
 
 /* CONFLICT- PLEASE FIX : i think the best way to fix is just get rid of this one - it is much less dynamic*/
 
-#login-box {
-  position: relative;
-  margin: 5% auto;
-  width: 700px;
-  height: 500px;
-  background: #FFF;
-  border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-}
-
 .items {
   position: absolute;
   top: 0;
