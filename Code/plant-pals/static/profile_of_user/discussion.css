@@ -1,15 +1,15 @@
 .card-header{
     background-color: #ADC178; 
-    border-color: white;
+    border-color: white
 }
 
 .card-body{
     background-color: #DDE5B6;
-    border-color: white;
+    border-color: white
 }
 
-.reply
+.reply-class
 {
-    background-color: #ADC178;
-    border-color: white;
+    background-color: #ADC178 !important;
+    border-color: white !important
 }
