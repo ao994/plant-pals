@@ -26,20 +26,22 @@
     <link rel="stylesheet" href="{% static '/profile_of_user/sign_in.css' %}">
     
 <!-- the actual login -->
-<div id="login-box">
-    <div class="items">
-      <h1>Log In</h1>
-        <form action="/login/" method="post">
-        
-        <!-- security key; look up for more info -->
-        {% csrf_token %}
+<div class="background"></div>
+  <div id="login-box">
+      <div class="items">
+        <h1>Log In</h1>
+          <form action="/login/" method="post">
+          
+          <!-- security key; look up for more info -->
+          {% csrf_token %}
 
-        <!-- first param is the type; second is the saved variable name to use in code; 
-          third is the display to user 
-        -->
-        <input type="text" name="username" placeholder="Username" />
-        <input type="password" name="password" placeholder="Password" />      
-        <input type="submit" name="signup_submit" value="Log In" />
-    </div>   
-  </div>
+          <!-- first param is the type; second is the saved variable name to use in code; 
+            third is the display to user 
+          -->
+          <input type="text" name="username" placeholder="Username" />
+          <input type="password" name="password" placeholder="Password" />      
+          <input type="submit" name="signup_submit" value="Log In" />
+      </div>   
+    </div>
+
   {% endblock %}
