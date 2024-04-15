@@ -14,7 +14,7 @@
         <div class="card mb-4">
             
             <!-- Post Header -->  
-            <div class="card-header">
+            <div class="card-header main-post-header">
                 <!-- User Profile Picture -->
                 <img src="/media/{{post.image}}" class="d-block ui-w-40 rounded-circle" alt="Profile Picture" width="40px" height="40px">
                 <!-- Username -->
@@ -31,7 +31,7 @@
             </div>   <!-- end header div -->      
             
             <!-- Post Body -->  
-            <div class="card-body">
+            <div class="card-body main-post-body">
                 <p>{{post.post_content}}</p>
             </div>
 
@@ -52,18 +52,22 @@
 {% for reply in replies %}
 <br>
 <!-- Reply div -->  
-<div class="container reply-class"> <!-- NOTE: consider changing to container fluid (compare resizing of reply to main post to see difference), added class .reply-class --> 
-    <div class="d-flex"> <!-- NOTE:changed class to .d-flex (was .media) -->
-        <img class="mr-3 rounded-circle" src="/media/{{reply.image}}" alt="." width="30px" height="30px">
-        <div class="media-body">
-            <h4 class="mt-0">
+<div class="container"> <!-- NOTE: consider changing to container fluid (compare resizing of reply to main post to see difference), added class .reply-class --> 
+    <div class="d-flex col-md-12 card"> <!-- NOTE:changed class to .d-flex (was .media) -->
+        <div class = "card-header reply-class"> <!-- start header of reply -->
+            <img class="mr-3 rounded-circle" src="/media/{{reply.image}}" alt="." width="30px" height="30px">
+            <h4 class="mt-0 justify-content-center">
                 {{reply.user}}
-                <span><small style="font-size: 13px;">({{reply.timestamp}})</small></span>
-            </h4>   
+            </h4> 
+            <span><small style="font-size: 13px;">({{reply.timestamp}})</small></span>
+                
+        </div>  
+        <div class="card-body reply-class">
             <h5>
                 {{reply.reply_content}}
             </h5>
         </div>
+        
     </div>
 </div> <!-- end reply div --> 
 {% endfor %}
