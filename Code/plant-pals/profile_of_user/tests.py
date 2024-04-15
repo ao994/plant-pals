@@ -22,7 +22,7 @@ class TestModelCase(TestCase):
             water = "Test water recommended",
             temp_low_F = 50.0,
             temp_high_F = 80.0,
-            image = "test.html"
+            image = "test.img"
         )
 
         # set testing profile to user data

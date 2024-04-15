@@ -22,3 +22,4 @@ class PlantForm(forms.ModelForm):
         fields = ['plant_image_1', 'plant_name_1']
         # Add fields for plant_image_2, plant_name_2, and so on...
         # if doing this, make sure to add to models.py
+
