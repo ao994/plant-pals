@@ -90,3 +90,9 @@ class Plant(models.Model):
     def delete(self, using=None, keep_parents=False):
         self.image.delete()
         super().delete()
+
+##############################################################################
+# Search function model
+##############################################################################
+
+

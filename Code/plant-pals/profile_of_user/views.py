@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, HttpResponse, Http404
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth  import authenticate,  login, logout
-from .models import Post, Replie, Profile, DailyTask
+from .models import Post, Replie, Profile, DailyTask, Plant
 from .forms import ProfileForm, PlantForm
 from django.contrib.auth.decorators import login_required
 
@@ -201,7 +201,31 @@ def myprofile(request):
     # return/render the page
     return render(request, profile_page, {'avatar_form': avatar_form, 'plant_form': plant_form, 'created': created, 'current_week_tasks': current_week_tasks})
 
+##############################################################################
+# Search views
+##############################################################################
+def search(request):
+    # sets html template file
+    search_page = "search.html"
+    
+    #defines what happens when there is a POST request
+    if request.method == "POST":
+        plant = request.POST.get("q")
+        search_result = Plant.objects.filter(common_name__icontains=plant)
+        return render(request, search_page, {'search_result':search_result })
 
+    #defines what happens when there is a GET request
+    else:
+        return render(request,search_page)
+
+
+def search_result(request, scientific_name):
+    #sets template file
+    result_page = "search_result.html"
+
+    plant = Plant.objects.get(scientific_name=scientific_name)
+
+    return render(request, result_page, {'plant':plant })
 
 
 
