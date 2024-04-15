@@ -52,8 +52,8 @@
 {% for reply in replies %}
 <br>
 <!-- Reply div -->  
-<div class="container">
-    <div class="media">
+<div class="container reply"> <!-- NOTE: consider changing to container fluid (compare resizing of reply to main post to see difference) --> 
+    <div class="d-flex"> <!-- NOTE:changed class to .d-flex (was .media), added class .reply -->
         <img class="mr-3 rounded-circle" src="/media/{{reply.image}}" alt="." width="30px" height="30px">
         <div class="media-body">
             <h4 class="mt-0">
