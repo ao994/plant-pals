@@ -40,7 +40,7 @@
                 <div class="px-4 pt-3"> 
                     <button type="button" class="btn btn-primary" data-target="#reply" data-toggle="modal">
                         <i class="ion ion-md-create"></i>
-                        &nbsp; Reply
+                        Reply
                     </button> 
                 </div>
             </div> <!-- End footer div -->  
@@ -51,15 +51,21 @@
 
 {% for reply in replies %}
 <br>
+<!-- Reply div -->  
 <div class="container">
-<div class="media">
-    <img class="mr-3 rounded-circle" src="/media/{{reply.image}}" alt="." width="30px" height="30px">
-    <div class="media-body">
-      <h4 class="mt-0">{{reply.user}}	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;  <span><small style="font-size: 13px;">({{reply.timestamp}})</small></span></h4>   
-      <h5>{{reply.reply_content}}</h5>
+    <div class="media">
+        <img class="mr-3 rounded-circle" src="/media/{{reply.image}}" alt="." width="30px" height="30px">
+        <div class="media-body">
+            <h4 class="mt-0">
+                {{reply.user}}
+                <span><small style="font-size: 13px;">({{reply.timestamp}})</small></span>
+            </h4>   
+            <h5>
+                {{reply.reply_content}}
+            </h5>
+        </div>
     </div>
-  </div>
-</div>
+</div> <!-- end reply div --> 
 {% endfor %}
 
 <!-- modal -->
