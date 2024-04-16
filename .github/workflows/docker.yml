@@ -46,4 +46,4 @@ jobs:
             docker ps -aq | xargs docker stop | xargs docker rm
             docker rmi -f $(docker images -aq)
             docker pull ghcr.io/ak2466/plantpals:latest
-            docker run -p 80:80 ${{secrets.DB_VOLUME}} ghcr.io/ak2466/plantpals:latest
+            docker run -p 80:80 -v ${{secrets.DB_VOLUME}} ghcr.io/ak2466/plantpals:latest
