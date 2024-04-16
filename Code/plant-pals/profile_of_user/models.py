@@ -5,7 +5,7 @@ from django.db.models import UniqueConstraint # Constrains fields to unique valu
 
 # profile model
 class Profile(models.Model):
-    user = models.OneToOneField(User, null=True, blank=True, on_delete=models.CASCADE)    
+    user = models.OneToOneField(User, null=True, blank=True, unique = True, on_delete=models.CASCADE)    
     # for user avatar images
     avatar = models.ImageField(upload_to="images", default="default/user.png")
 

@@ -2,14 +2,17 @@
 
 {% block title %} Register {% endblock %}
 {% block registeractive %} active {% endblock registeractive %}
-{% block css %}
 
 <!-- start of website code -->
-{% endblock %}
-{% block body %} 
 
-<br>
+{% block body %} 
  
+{% load static %}
+    <link rel="stylesheet" href="{% static '/profile_of_user/sign_up.css' %}">
+    
+
+<div class="background"></div>
+
 <!-- display all messages; this is from the django.contrib library. For how to use (add a message),
    see views.py. There are some exampels in there that use it. More info can also be found here:
    https://docs.djangoproject.com/en/5.0/ref/contrib/messages/ 
@@ -23,9 +26,7 @@
     </div>
 {% endfor %}
 
-{% load static %}
-    <link rel="stylesheet" href="{% static '/profile_of_user/sign_up.css' %}">
-    
+
 <div id="login-box">
     <div class="items">
       <h1>Register</h1>
