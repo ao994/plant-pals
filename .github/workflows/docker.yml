@@ -42,4 +42,8 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          script: whoami
+          script: |
+            docker ps -aq | xargs docker stop | xargs docker rm
+            docker rmi -f $(docker images -aq)
+            docker pull ghcr.io/ak2466/plantpals:latest
+            docker run -p 80:80 ${{secrets.DB_VOLUME}} ghcr.io/ak2466/plantpals:latest
