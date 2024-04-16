@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Handlee&family=Sofia&display=swap');
+
 *:focus {
   outline: none;
 }
@@ -11,7 +12,18 @@ body {
   padding: 0;
   background: #DDD;
   color: #222;
-  background-image: url("images/2021-03-09-10-39-59-1800x1200.jpg");
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  
+  background: url("images/2021-03-09-10-39-59-1800x1200.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #login-box {
