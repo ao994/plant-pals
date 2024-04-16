@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Handlee&family=Sofia&display=swap');
+
 *:focus {
   outline: none;
 }
@@ -10,6 +11,7 @@
 .background {
   position: absolute;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
 
