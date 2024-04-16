@@ -45,5 +45,6 @@ jobs:
           script: |
             docker ps -aq | xargs docker stop | xargs docker rm
             docker rmi -f $(docker images -aq)
+            service docker restart
             docker pull ghcr.io/ak2466/plantpals:latest
             docker run ${{secrets.DB_VOLUME}}
