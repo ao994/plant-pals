@@ -5,6 +5,7 @@ from django.contrib.auth  import authenticate,  login, logout
 from .models import Post, Replie, Profile, DailyTask, Plant
 from .forms import ProfileForm, PlantForm
 from django.contrib.auth.decorators import login_required
+from django.db import IntegrityError
 
 # for the forum page
 def forum(request):
@@ -69,7 +70,7 @@ def UserRegister(request):
         last_name = request.POST['last_name']
         password = request.POST['password']
         confirm_password = request.POST['confirm_password']
-        
+
         # keep username to less than 15 characters
         if len(username) > 15:
             messages.error(request, "Username must be under 15 characters.")
@@ -85,18 +86,25 @@ def UserRegister(request):
             messages.error(request, "Passwords do not match.")
             return redirect(registerRedirect)
         
-        # create the user
-        user = User.objects.create_user(username, email, password)
+        # check if username has been used before
+        try:
+            #create user object
+            user = User.objects.create_user(username, email, password)
 
-        # define user details
-        user.first_name = first_name
-        user.last_name = last_name
+            # define user details
+            user.first_name = first_name
+            user.last_name = last_name
 
-        # save the user details
-        user.save()
+            # save the user details
+            user.save()
 
-        # then take them to the login page
-        return render(request, login_page) 
+            # then take them to the login page
+            return render(request, login_page) 
+        except IntegrityError as e:
+            messages.error(request, "Integrity Error.")
+        
+
+        
 
     # otherwise keep to page
     return render(request, register_page)

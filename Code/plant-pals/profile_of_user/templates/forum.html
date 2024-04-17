@@ -22,27 +22,34 @@
     <p>You can also reply to others post by clicking on their post and replying them.</p>
       <button class="btn btn-primary btn-lg" data-target="#questions" data-toggle="modal" role="button">Add Post</button>
     </div>
-    <br>
+
+    <!-- Post outline -->
     {% for post in posts %}
     <div class="container-fluid mt-10">
       <div class="row">
           <div class="col-md-12">
               <div class="card mb-4">
-                  <div class="card-header">
-                      <div class="media flex-wrap w-100 align-items-center"> <img src="/media/{{post.image}}"
-                              class="d-block ui-w-40 rounded-circle" alt="">
-                          <div class="media-body ml-3"> <a href="/discussion/{{post.id}}" data-abc="true">{{post.user1}}</a>
-                          </div>
-                          <div class="text-muted small ml-3">
-                            <div class="px-4 pt-3">{{post.timestamp}} </div>
-                          </div>
-                      </div>
-                  </div>         
+
+                  <div class="card-header justify-content-between">
+                        <div class="d-flex align-items-center w-100"> 
+                                <img src="/media/{{post.image}}" class="d-block ui-w-40 rounded-circle" alt="" width="40px" height="40px">
+                            <div class="media-body ml-3"> 
+                                <a href="/discussion/{{post.id}}" data-abc="true">{{post.user1}}</a>
+                            </div>
+                        </div>
+                            <div class="text-muted small ml-3">
+                                <div class="px-4 pt-3">{{post.timestamp}} </div>
+                            </div>
+                        
+                  </div>  
+
                   <div class="card-body">
                       <p>{{post.post_content}}</p>
                   </div>
+                  
                   <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pt-0 pb-3">                  
                   </div>
+
               </div>
           </div>
       </div>
