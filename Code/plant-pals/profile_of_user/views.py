@@ -6,6 +6,7 @@ from .models import Post, Replie, Profile, DailyTask, Plant
 from .forms import ProfileForm, PlantForm
 from django.contrib.auth.decorators import login_required
 from django.db import IntegrityError
+from django.db.models import Q
 
 # for the forum page
 def forum(request):
@@ -219,7 +220,7 @@ def search(request):
     #defines what happens when there is a POST request
     if request.method == "POST":
         plant = request.POST.get("q")
-        search_result = Plant.objects.filter(common_name__icontains=plant).filter(scientific_name__icontains=plant)
+        search_result = Plant.objects.filter(Q(common_name__icontains=plant) | Q(scientific_name__icontains=plant))
         return render(request, search_page, {'search_result':search_result })
 
     #defines what happens when there is a GET request
