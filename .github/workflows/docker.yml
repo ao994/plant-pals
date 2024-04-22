@@ -49,3 +49,4 @@ jobs:
             service docker restart
             docker pull ghcr.io/ak2466/plantpals:latest
             docker run -d -p 80:80 -v ./db:/usr/src/app/db ghcr.io/ak2466/plantpals:latest
+            echo "Deployment completed."
