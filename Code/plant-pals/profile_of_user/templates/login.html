@@ -2,12 +2,18 @@
 
 {% block title %} Log In {% endblock %}
 {% block loginactive %} active {% endblock loginactive %}
-{% block css %}
+
+
 
 <!-- start of code -->
-{% endblock %}
+
 {% block body %} 
-<br>
+<!-- load css stylesheet -->
+{% load static %}
+    <link rel="stylesheet" href="{% static '/profile_of_user/sign_in.css' %}">
+
+<!-- the actual login -->
+<div class="background"></div>
 
 <!-- display all messages; this is from the django.contrib library. For how to use (add a message),
    see views.py. There are some exampels in there that use it. More info can also be found here:
@@ -22,11 +28,8 @@
     </div>
 {% endfor %}
 
-{% load static %}
-    <link rel="stylesheet" href="{% static '/profile_of_user/sign_in.css' %}">
     
-<!-- the actual login -->
-<div class="background"></div>
+
   <div id="login-box">
       <div class="items">
         <h1>Log In</h1>
@@ -44,4 +47,4 @@
       </div>   
     </div>
 
-  {% endblock %}
+{% endblock %}

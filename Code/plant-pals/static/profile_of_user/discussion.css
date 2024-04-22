@@ -1,14 +1,32 @@
-.card-header{
+.main-post-header
+{
     background-color: #ADC178; 
-    border-color: white;
+    border-color: white
 }
 
-.card-body{
+.main-post-body
+{
     background-color: #DDE5B6;
-    border-color: white;
+    border-color: white
 }
 
-.media{
+.reply-class
+{
     background-color: #ADC178;
     border-color: white;
+}
+
+.profile-pic
+{
+    float: left;
+}
+
+.username
+{
+    text-transform: uppercase;
+}
+
+.reply-timestamp
+{
+    font-size: 13px;
 }

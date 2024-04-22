@@ -7,42 +7,78 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'profile_of_user/discussion.css' %}">
 
-<br>
+
+<!-- Main Header -->  
 <div class="container-fluid mt-5">
-      <div class="col-md-12">
-          <div class="card mb-4">
-              <div class="card-header">
-                  <img src="/media/{{post.image}}"
-                        class="d-block ui-w-40 rounded-circle" alt="" width="40px" height="40px">
-                    <div class="media-body ml-3" style="text-transform: uppercase;"> <a data-abc="true">{{post.user1}}</a>
+    <div class="col-md-12">
+        <div class="card mb-4">
+            
+            <!-- Post Header -->  
+            <div class="card-header main-post-header justify-content-between">
+                <div class ="d-flex align-items-center"> <!-- Picture/Username -->
+                    <!-- User Profile Picture -->
+                    <img src="/media/{{post.image}}" class="d-block ui-w-40 rounded-circle" alt="Profile Picture" width="40px" height="40px">
+                    <!-- Username -->
+                    <div class="media-body ml-3 username"> 
+                        <a data-abc="true">{{post.user1}}</a>
                     </div>
-                    <div class="text-muted small ml-3">
-                        <div>Date and Time Of Post:</div>
-                        <div><strong>{{post.timestamp}}</strong></div>
-                  </div>
-              </div>         
-              <div class="card-body">
-                  <p>{{post.post_content}}</p>
-              </div>
-              <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pt-0 pb-3">
-                  <div class="px-4 pt-3"> <button type="button" class="btn btn-primary" data-target="#reply" data-toggle="modal"><i
-                              class="ion ion-md-create"></i>&nbsp; Reply</button> </div>
                 </div>
+                <!-- Post Timestamp -->
+                <div class="text-muted small ml-3">
+                    <div>Date and Time Of Post:</div>
+                    <div>
+                        <strong>{{post.timestamp}}</strong>
+                    </div>
+                </div>  
+            </div>   <!-- end header div -->      
+            
+            <!-- Post Body -->  
+            <div class="card-body main-post-body">
+                <p>{{post.post_content}}</p>
+            </div>
+
+            <!-- Post Footer (with reply button) -->  
+            <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pt-0 pb-3">
+                <div class="px-4 pt-3"> 
+                    <button type="button" class="btn btn-primary" data-target="#reply" data-toggle="modal">
+                        <i class="ion ion-md-create"></i>
+                        Reply
+                    </button> 
+                </div>
+            </div> <!-- End footer div -->  
         </div>
     </div>
-</div>
+</div> <!-- End Main post div -->  
+
+
 {% for reply in replies %}
 <br>
-<div class="container">
-<div class="media">
-    <img class="mr-3 rounded-circle" src="/media/{{reply.image}}" alt="." width="30px" height="30px">
-    <div class="media-body">
-      <h4 class="mt-0">{{reply.user}}	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;  <span><small style="font-size: 13px;">({{reply.timestamp}})</small></span></h4>   
-      <h5>{{reply.reply_content}}</h5>
+<!-- Reply div -->  
+<div class="container"> <!-- NOTE: consider changing to container fluid (compare resizing of reply to main post to see difference), added class .reply-class --> 
+    <div class="d-flex col-md-12 card"> <!-- NOTE:changed class to .d-flex (was .media) -->
+        <div class = "card-header reply-class justify-content-between"> <!-- start header of reply -->
+            <div class = "d-flex align-items-center"> <!-- start image and username of reply -->
+                <img class="mr-3 rounded-circle profile-pic" src="/media/{{reply.image}}" alt="Profile Picture" width="30px" height="30px">
+                <h4 class="card-title">
+                    {{reply.user}}
+                </h4> 
+            </div>    
+            <div class = "reply-timestamp"><!-- start timestamp of reply -->
+                ({{reply.timestamp}})
+            </div>       
+        </div>  <!-- end header of reply -->
+
+        <div class="card-body reply-class">
+            <h5>
+                {{reply.reply_content}}
+            </h5>
+        </div>
+        
     </div>
-  </div>
-</div>
+</div> <!-- end reply div --> 
 {% endfor %}
+
+
 
 <!-- modal -->
 <div class="modal fade" id="reply" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
