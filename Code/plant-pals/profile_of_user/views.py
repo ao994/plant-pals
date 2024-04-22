@@ -6,6 +6,7 @@ from .models import Post, Replie, Profile, DailyTask, Plant
 from .forms import ProfileForm, PlantForm
 from django.contrib.auth.decorators import login_required
 from django.db import IntegrityError
+from django.db.models import Q
 
 # for the forum page
 def forum(request):
@@ -72,8 +73,8 @@ def UserRegister(request):
         confirm_password = request.POST['confirm_password']
 
         # keep username to less than 15 characters
-        if len(username) > 15:
-            messages.error(request, "Username must be under 15 characters.")
+        if len(username) > 20:
+            messages.error(request, "Username must be under 20 characters.")
             return redirect(registerRedirect)
         
         # keep to username to being letters/numbers
@@ -100,10 +101,10 @@ def UserRegister(request):
 
             # then take them to the login page
             return render(request, login_page) 
-        except IntegrityError as e:
-            messages.error(request, "Integrity Error.")
         
-
+        # if the error occurs, inform the user.
+        except IntegrityError:
+            messages.error(request, "Username already exists. Try again.")
         
 
     # otherwise keep to page
@@ -150,6 +151,7 @@ def myprofile(request):
     profile_redirect = '/myprofile'
 
     profile, created = Profile.objects.get_or_create(user=request.user)
+    current_week_tasks = []
 
     # check request type; make sure proper
     if request.method == "POST":
@@ -200,7 +202,7 @@ def myprofile(request):
     else:
         avatar_form = ProfileForm(instance=profile)
         plant_form = PlantForm(instance=profile)
-        current_week_tasks = []
+
         for day in range(7):
             task_date = calculate_task_date(day)
             daily_task, created = DailyTask.objects.get_or_create(user=request.user, task_date=task_date)
@@ -219,7 +221,7 @@ def search(request):
     #defines what happens when there is a POST request
     if request.method == "POST":
         plant = request.POST.get("q")
-        search_result = Plant.objects.filter(common_name__icontains=plant)
+        search_result = Plant.objects.filter(Q(common_name__icontains=plant) | Q(scientific_name__icontains=plant))
         return render(request, search_page, {'search_result':search_result })
 
     #defines what happens when there is a GET request

@@ -28,8 +28,8 @@ input[type="submit"] {
     color: #FFF;
     text-transform: uppercase;
     cursor: pointer;
-    position: left;
-    left: 250px;
+    left:auto;
+
   }
 
 input[type="submit"]:hover {
@@ -38,4 +38,13 @@ input[type="submit"]:hover {
     transition: 0.2s ease;
   }
   
+
+  .search-box
+{
+    text-align: center;
+}
   
+.search 
+{
+    max-width: 1000px;  
+}
