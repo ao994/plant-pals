@@ -32,6 +32,7 @@ jobs:
           tags: ghcr.io/ak2466/plantpals:latest
 
   deploy:
+    needs: build_and_publish
     runs-on: ubuntu-latest
     steps:
       -
