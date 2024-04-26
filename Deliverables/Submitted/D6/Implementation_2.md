@@ -49,7 +49,8 @@ Print screen:
 Print screen: 
 ![Website header](WebHeader.png)
 
-#### Requirement: As a new user with a profile, I want to have a unique username so that other people can easily differentiate me.
+#### Requirement: 
+>As a new user with a profile, I want to have a unique username so that other people can easily differentiate me.
 - Issue: <https://github.com/ao994/plant-pals/issues/136> 
 - Pull request: <https://github.com/ao994/plant-pals/commit/74e7aad897df226b0b289e7b0b930c7c640c9210> 
 - Implemented by: Alyssa Ortiz & Haley Berger & Alex King
