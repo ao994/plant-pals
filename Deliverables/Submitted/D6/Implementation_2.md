@@ -57,6 +57,7 @@ Print screen:
 - Approved by: Alyssa Ortiz (Because we were all working on it together, we did a direct commit to our launch test branch, which was then later committed to the main branch with some other implementations)
 
 Print screen: 
+
 ![check for the username](UsernameCheck.png)
 
 ## 3\. Tests 
