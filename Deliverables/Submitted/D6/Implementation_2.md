@@ -15,6 +15,7 @@ The three key features of Plant Pals are the plant profiles, a plant database, a
 - Approved by: Andy Ortega
   
 Print screen: 
+
 ![search feature](SearchFeature.png)
 
 #### Requirement: 
@@ -25,6 +26,7 @@ Print screen:
 - Approved by: Andy Ortega
   
 Print screen: 
+
 ![info on plants](PlantInfo.png)
 
 #### Requirement: 
@@ -35,6 +37,7 @@ Print screen:
 - Approved by: Andy Ortega
   
 Print screen: 
+
 ![watering schedule](WateringSchedule.png)
 
 #### Requirement: 
@@ -47,6 +50,7 @@ Print screen:
 - Approved by: Haley Berger
   
 Print screen: 
+
 ![Website header](WebHeader.png)
 
 #### Requirement: 
@@ -61,13 +65,13 @@ Print screen:
 ![check for the username](UsernameCheck.png)
 
 ## 3\. Tests 
-Example test case:
+**Example test case:**
 
 The following is an example of one of our test cases. This test case specifically checks to ensure that the watering schedule works as it should (allowing the user to input information and mark if it has already been completed or not).
 
 This is our fifth test case in tests.py. The process starts with a setup, proceeds to the validation and assertion, and then finishes with a cleanup.
 
-Setup (creates a watering schedule object and sets up requirements for a Client test):
+***Setup*** (creates a watering schedule object and sets up requirements for a Client test):
 
 -   Django will first make a temporary database.
 
@@ -77,7 +81,7 @@ Setup (creates a watering schedule object and sets up requirements for a Client 
 
 ![setup for the watering schedule](wateringSchedule_test_setup.jpg)
 
-Data validation/assertion (confirms that the information is interactable as expected and properly saved):
+***Data validation/assertion*** (confirms that the information is interactable as expected and properly saved):
 
 -   To test a page, we needed to tell the program what page we want to test. Doing so allows the software to know what it can access. From there, we set the information that we want to attempt to insert. This uses information from setup, marking every other task as completed, and ensuring that the tasks can be updated.
 
@@ -85,7 +89,7 @@ Data validation/assertion (confirms that the information is interactable as expe
 
 ![watering schedule test](wateringSchedule_test.jpg)
 
-Cleanup (gets rid of the watering schedule object because it is not needed in other test cases):
+***Cleanup*** (gets rid of the watering schedule object because it is not needed in other test cases):
 
 -   Due to the watering schedule not being needed in other test cases, we can go ahead and get rid of it.
 
@@ -93,16 +97,20 @@ Cleanup (gets rid of the watering schedule object because it is not needed in ot
 
 ![cleanup of the watering schedule](wateringSchedule_test_cleanup.jpg)
 
-Results: 
+***Results***: 
 
 ![test results](testResults.png)
 
 Each '.' represents a successful run of a single test case. There are eight '.' because we have eight test cases. If one presented an error, the '.' would be replaced with an 'E'. If one presented a failure, the '.' would be replaced with an 'F'. The results presented show successful test runs.
 
-Additional Tests: Aside from the test case provided above and those mentioned in D4 (for plant, posts, replies, and profile), test cases for a unique username, plant search functionality, and plant search results have also been made.
+
+
+**Additional Tests**: Aside from the test case provided above and those mentioned in D4 (for plant, posts, replies, and profile), test cases for a unique username, plant search functionality, and plant search results have also been made.
 
 ## 4\. Demo
-Here is the link to our demo!<https://youtu.be/Dfu_dMSZjZY>
+Here is the link to our demo!
+
+<https://youtu.be/Dfu_dMSZjZY>
 
 ## 5\. Code quality
 
