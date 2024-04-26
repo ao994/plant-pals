@@ -59,7 +59,7 @@ Print screen:
 Print screen: 
 ![check for the username](UsernameCheck.png)
 
-##3\. Tests 
+## 3\. Tests 
 Example test case:
 
 The following is an example of one of our test cases. This test case specifically checks to ensure that the watering schedule works as it should (allowing the user to input information and mark if it has already been completed or not).
