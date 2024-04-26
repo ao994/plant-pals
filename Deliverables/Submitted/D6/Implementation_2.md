@@ -14,7 +14,8 @@ The three key features of Plant Pals are the plant profiles, a plant database, a
 - Implemented by: Alyssa Ortiz
 - Approved by: Andy Ortega
   
-Print screen: (SearchFeature.png)
+Print screen: 
+![search feature](SearchFeature.png)
 
 #### Requirement: 
 >As a novice plant owner, I want to view and access plant information about plant care to keep my plants alive.
@@ -23,7 +24,8 @@ Print screen: (SearchFeature.png)
 - Implemented by: Alyssa Ortiz
 - Approved by: Andy Ortega
   
-Print screen: (PlantInfo.png)
+Print screen: 
+![info on plants](PlantInfo.png)
 
 #### Requirement: 
 >As a plant owner, I want to be able to keep track of my plant's watering schedule so I can make sure they have been watered and are not being overwatered.
@@ -32,7 +34,8 @@ Print screen: (PlantInfo.png)
 - Implemented by: Haley Berger
 - Approved by: Andy Ortega
   
-Print screen: (WateringSchedule.png)
+Print screen: 
+![watering schedule](WateringSchedule.png)
 
 #### Requirement: 
 >As a new user, I want to be able to easily find what I am looking for on the website so that I don't get lost and give up.
@@ -43,7 +46,8 @@ Print screen: (WateringSchedule.png)
 - Implemented by: Karissa Smallwood
 - Approved by: Haley Berger
   
-Print screen: (WebHeader.png)
+Print screen: 
+![Website header](WebHeader.png)
 
 #### Requirement: As a new user with a profile, I want to have a unique username so that other people can easily differentiate me.
 - Issue: <https://github.com/ao994/plant-pals/issues/136> 
@@ -51,7 +55,8 @@ Print screen: (WebHeader.png)
 - Implemented by: Alyssa Ortiz & Haley Berger & Alex King
 - Approved by: Alyssa Ortiz (Because we were all working on it together, we did a direct commit to our launch test branch, which was then later committed to the main branch with some other implementations)
 
-Print screen: (UsernameCheck.png)
+Print screen: 
+![check for the username](UsernameCheck.png)
 
 ##3\. Tests##
 Example test case:
@@ -68,7 +73,7 @@ Setup (creates a watering schedule object and sets up requirements for a Client 
 
 -   Client is also set up; this allows us to create a "fake" interactable version of our website that the test code can use. Client, from here on out, can be considered a fake user. We then log in Client, that way it can interact with parts of the website only available to logged-in users. In this case, the watering schedule is on a user's profile, which is only accessible to a logged-in user and thus makes logging in Client necessary.
 
-(wateringSchedule_test_setup.jpg)
+![setup for the watering schedule](wateringSchedule_test_setup.jpg)
 
 Data validation/assertion (confirms that the information is interactable as expected and properly saved):
 
@@ -76,7 +81,7 @@ Data validation/assertion (confirms that the information is interactable as expe
 
 -   Client then accesses the designated part of the website with the information we set up. This is our "black box". We can only send input (the previously defined information) and receive output from the call. The result of the call (our output) ensures that the page was accessed as expected and that the data was saved. We then looked to see if the newly saved data was what we expected. This uses the functions in view.py for testing with the fake website.
 
-(wateringSchedule_test.jpg)
+![watering schedule test](wateringSchedule_test.jpg)
 
 Cleanup (gets rid of the watering schedule object because it is not needed in other test cases):
 
@@ -84,11 +89,11 @@ Cleanup (gets rid of the watering schedule object because it is not needed in ot
 
 -   After all the tests are completed, Django will get rid of the temporary database it made for testing purposes.
 
-(wateringSchedule_test_cleanup.jpg)
+![cleanup of the watering schedule](wateringSchedule_test_cleanup.jpg)
 
 Results: 
 
-(testResults.png)
+![test results](testResults.png)
 
 Each '.' represents a successful run of a single test case. There are eight '.' because we have eight test cases. If one presented an error, the '.' would be replaced with an 'E'. If one presented a failure, the '.' would be replaced with an 'F'. The results presented show successful test runs.
 
