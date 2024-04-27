@@ -71,6 +71,8 @@ The following is an example of one of our test cases. This test case specificall
 
 This is our fifth test case in tests.py. The process starts with a setup, proceeds to the validation and assertion, and then finishes with a cleanup.
 
+Link to tests file: https://github.com/ao994/plant-pals/blob/main/Code/plant-pals/profile_of_user/tests.py
+
 ***Setup*** (creates a watering schedule object and sets up requirements for a Client test):
 
 -   Django will first make a temporary database.
