@@ -67,6 +67,7 @@ Print screen:
 ## 3\. Tests 
 
 We use Django's built-in testing framework, which is based on the unittest Python library.
+
 **Example test case:**
 
 The following is an example of one of our test cases. This test case specifically checks to ensure that the watering schedule works as it should (allowing the user to input information and mark if it has already been completed or not).
