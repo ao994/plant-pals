@@ -13,30 +13,22 @@ body{
   padding: 0;
   font-size: 16px;
   background-color: #e3e3e3 ;
-  background-image: url("images/seamless_flower.png");
-  background-repeat: repeat;
-  background-position: center;
 }
 
 #login-box {
-  color:#215751; 
+   
   position: relative;
   margin: 5% auto;
   width: 700px;
   height: 500px;
-  background: #fff;
-  border-color:#215751;
-  border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-/*
   background-color: #FFF;
   box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.6);
-  border-radius: 25px;
-  border: 4px solid #16a085;
+  border-radius: 17.5px;
+  border: 4px solid #ADC178;
 }
-*/
-}
-/*
+
+
+
 .background {
   position: absolute;
   left: 0;
@@ -49,16 +41,7 @@ body{
   background-size: cover;
   filter: opacity(100%) brightness(1) blur(0.25px);
 }
-*/
-.items {
-  position: absolute;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-  padding: 40px;
-  width: 700px;
-  height: 500px;
-}
+
 
 input[type="text"],
 input[type="password"] {
