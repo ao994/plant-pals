@@ -30,14 +30,17 @@ More information about the specifics of how it runs can be found there.
 This test case specifically checks that an individual part of our code (in this case, our Plant model), stores and interacts properly with the database. This is to test for possible data loss or bugs.
 
 #### Setup (creates a new mock object (a new/test plant) using our Plant model):
-This also adds it to a temporary database created by Django for unit testing to ensure it acts as expected. (plantMockObject.png)
+- This also adds it to a temporary database created by Django for unit testing to ensure it acts as expected. 
+
+![plant mock object](plantMockObject.png)
 
 #### Data validation/assertion (confirms that the information in the database matches the information assigned): 
-(testPlantCreation.png)
 
-#### Cleanup (removes the added database information to prepare for next test/ confirm that information is properly removed when deleted) 
-(plantTeardown.png)
+![plant creation](testPlantCreation.png)
 
+#### Cleanup (removes the added database information to prepare for next test/ confirm that information is properly removed when deleted): 
+
+![plant teardown](plantTeardown.png)
 
 
 #### Acceptance Test
@@ -52,21 +55,26 @@ This test case specifically checks to ensure that the watering schedule works as
 - Django will first make a temporary database.
 - The test starts by determining the time and day of the system in order to assign days to the watering schedule. Following that, data is set up using our DailyTask model to get necessary testing information. A string is assigned to each day, as is a boolean that is used to determine if the task has been completed or not. In the initial setup, none of the tasks are completed.
 - Client is also set up; this allows us to create a “fake” interactable version of our website that the test code can use. Client, from here on out, can be considered a fake user. We then log in Client, that way it can interact with parts of the website only available to logged-in users. In this case, the watering schedule is on a user's profile, which is only accessible to a logged-in user and thus makes logging in Client necessary.
-(wateringSchedule_test_setup.jpg)
+
+![plant watering schedule setup](wateringSchedule_test_setup.jpg)
+
 #### Data validation/assertion (confirms that the information is interactable as expected and properly saved):
 - To test a page, we needed to tell the program what page we want to test. Doing so allows the software to know what it can access. From there, we set the information that we want to attempt to insert. This uses information from setup, marking every other task as completed, and ensuring that the tasks can be updated.
 - Client then accesses the designated part of the website with the information we set up. This is our “black box”. We can only send input (the previously defined information) and receive output from the call. The result of the call (our output) ensures that the page was accessed as expected and that the data was saved. We then looked to see if the newly saved data was what we expected. This uses the functions in view.py for testing with the fake website.
-(wateringSchedule_test.jpg)
+
+![plant watering schedule](wateringSchedule_test.jpg)
 
 
 #### Cleanup (gets rid of the watering schedule object because it is not needed in other test cases):
 - Due to the watering schedule not being needed in other test cases, we can go ahead and get rid of it.
 - After all the tests are completed, Django will get rid of the temporary database it made for testing purposes.
-(wateringSchedule_test_cleanup.jpg)
+  
+![plant watering test](wateringSchedule_test_cleanup.jpg)
 
 
-#### Full Results (applicable for unit and acceptance testing): 
-(testResults.png)
+### Full Results (applicable for unit and acceptance testing): 
+
+![test results](testResults.png)
 
 
 Each ‘.’ represents a successful run of a single test case. There are eight ‘.’ because we have eight test cases. If one presented an error, the ‘.’ would be replaced with an ‘E’. If one presented a failure, the ‘.’ would be replaced with an ‘F’. The results presented show successful test runs.
