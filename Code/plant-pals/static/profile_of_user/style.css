@@ -1,6 +1,11 @@
 /*import Handlee and Klee One*/
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300,500');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300,500');
+
+
 .handlee-regular {
   font-family: "Handlee", cursive;
   font-weight: 400;
@@ -99,7 +104,7 @@ a {
     height: auto
 }
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
 *:focus {
   outline: none;
 }
@@ -183,7 +188,7 @@ input[type="submit"]:active {
 
 /* taken from register.html*/
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
 
 *:focus {
   outline: none;

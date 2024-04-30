@@ -1,14 +1,51 @@
-.card-header{
+.main-post-header
+{
     background-color: #ADC178; 
-    border-color: white;
+    border-color: white
 }
 
-.card-body{
+.main-post-body
+{
     background-color: #DDE5B6;
-    border-color: white;
+    border-color: white
 }
 
-.media{
+.reply-class
+{
     background-color: #ADC178;
     border-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #DDD;
+    background-image: url("images/seamless_flower_opacity.png");
+    background-repeat: repeat;    ;
+  }
+  
+#jumbo{
+    color:#215751; 
+    position: relative;
+    margin: 5% auto;
+    background: #DDE5B6;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+   /* border-color: white;*/
+}
+
+.profile-pic
+{
+    float: left;
+}
+
+.username
+{
+    text-transform: uppercase;
+}
+
+.reply-timestamp
+{
+    font-size: 13px;
 }

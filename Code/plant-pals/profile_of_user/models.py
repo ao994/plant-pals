@@ -5,9 +5,9 @@ from django.db.models import UniqueConstraint # Constrains fields to unique valu
 
 # profile model
 class Profile(models.Model):
-    user = models.OneToOneField(User, null=True, blank=True, on_delete=models.CASCADE)    
+    user = models.OneToOneField(User, null=True, blank=True, unique = True, on_delete=models.CASCADE)    
     # for user avatar images
-    avatar = models.ImageField(upload_to="images", default="default/user.png")
+    avatar = models.ImageField(upload_to="images", default="images/user.png")
 
     ## for the plants. If more portfolio plants are wanted, copy and past this
         ## just remember to change the name, add it to the PlantForm class in forms.py,
@@ -15,7 +15,7 @@ class Profile(models.Model):
         ## the profile html page.
 
     # change default to a temp plant when we have one
-    plant_image_1 = models.ImageField(upload_to="additional_images", default="default/user.png")
+    plant_image_1 = models.ImageField(upload_to="additional_images", default="images/user.png")
     plant_name_1 = models.CharField(max_length=60,  default="")
 
     #makes sure the images are deleted when a profile is deleted
@@ -90,9 +90,3 @@ class Plant(models.Model):
     def delete(self, using=None, keep_parents=False):
         self.image.delete()
         super().delete()
-
-##############################################################################
-# Search function model
-##############################################################################
-
-

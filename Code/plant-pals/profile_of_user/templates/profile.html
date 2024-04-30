@@ -4,8 +4,6 @@
 {% block profileactive %} active {% endblock profileactive %}
 
 {% block body %}
-<!-- add space to the top to stop weird overlap -->
-<div style="height: 50px;"></div>
 
 <!-- display all messages -->
 {% for message in messages %}
@@ -32,7 +30,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-primary">
                         <div class="card-body">
-                            <h3 style="color:#DDE5B6;">BUILD YOUR PROFILE</h3>
+                            <h3>BUILD YOUR PROFILE</h3>
                             <ul class="list-group">
                                 <li class="list-group-item">
                                     Username: <strong>{{ request.user }}</strong>
@@ -53,7 +51,7 @@
                                             <h5><b>AVATAR</b></h5>
                                             {{ avatar_form.as_p }}
                                             <button type="submit" class="btn btn-success" name="avatar_submit">Upload Avatar</button>
-                                            <br><be>
+                                            <br><br><be>
 
                                             <!-- plant form -->
                                             <h5><b>PLANT INFORMATION</b></h5>
@@ -97,10 +95,10 @@
 </div>
 
 <!-- watering schedule -->
-<div class="container" style="margin-top: 50px; text-align: center;">
+<div id="water" class="container" style="margin-top: 50px; text-align: center;">
     <form method="post">
         {% csrf_token %}
-        <h3 style="color:#383c44;">WATERING SCHEDULE</h3>
+        <h3>WATERING SCHEDULE</h3>
 
         <!-- table for water schedule -->
         <table class="table">
@@ -133,7 +131,7 @@
         </table>
 
         <!-- submit button to save watering schedule -->
-        <button type="submit" class="btn btn-success" name="daily_tasks_submit">Save</button>
+        <button type="submit" class="btn btn-success" name="daily_tasks_submit" id="daily_tasks_submit">Save</button>
     </form>
 </div>
 

@@ -2,26 +2,51 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Handlee&family=Sofia&display=swap');
+
 *:focus {
   outline: none;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background: url("https://source.unsplash.com/random/?flower,plant,nature");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: opacity(100%) brightness(1) blur(0.25px);
+/*
   background: #DDD;
   color: #222;
-  background-image: url("images/2021-03-09-10-39-59-1800x1200.jpg");
+*/
 }
+
+ /* 
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  
+  background: url("images/2021-03-09-10-39-59-1800x1200.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  */
+
 
 #login-box {
   position: relative;
   margin: 5% auto;
   width: 700px;
   height: 500px;
-  background: #AFE1AF;
-  border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  background-color: #FFF;
+  box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.6);
+  border-radius: 17.5px;
+  border: 4px solid #ADC178;
 }
 
 .items {
@@ -71,11 +96,11 @@ input[type="submit"] {
   margin-top: 28px;
   width: 120px;
   height: 32px;
-  background: #16a085;
-  border: none;
+  background-color: #ADC178;
   border-radius: 2px;
+  border-color: white;
   color: #FFF;
-  font-family: "Sofia", cursive;
+  font-family: "Klee One", cursive;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;

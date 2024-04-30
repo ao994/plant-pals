@@ -6,16 +6,19 @@
 {% block body %} 
 <link rel="stylesheet" href="{% static '/profile_of_user/search_result.css' %}">
 
-<p>Scientific Name: {{ plant.scientific_name }}</p>
-<p>Common Name: {{ plant.common_name }}</p>
-<p>Growth Habit: {{ plant.growth_habit }}</p>
-<p>Duration: {{ plant.duration }}</p>
-<p>Sun Requirements: {{ plant.sun_requirements }}</p>
-<p>Water: {{ plant.water }}</p>
-<p>Low Tempurature Threshold (F): {{ plant.temp_low_F }}</p>
-<p>High Tempurature Threshold (F):{{ plant.temp_high_F }}</p>
-<p>{{ plant.image }}</p>
+<div class = 'results'>
+ 
+    <p>Scientific Name: {{ plant.scientific_name }}</p>
+    <p>Common Name: {{ plant.common_name }}</p>
+    <p>Growth Habit: {{ plant.growth_habit }}</p>
+    <p>Duration: {{ plant.duration }}</p>
+    <p>Sun Requirements: {{ plant.sun_requirements }}</p>
+    <p>Water: {{ plant.water }}</p>
+    <p>Low Tempurature Threshold (F): {{ plant.temp_low_F }}</p>
+    <p>High Tempurature Threshold (F): {{ plant.temp_high_F }}</p>
+    <img src="/media/{{plant.image}}" class = "img-fluid img-thumbnail rounded plant-picture" alt = "Picture of {{ plant.common_name }}.">
 
+</div>
 
 
 

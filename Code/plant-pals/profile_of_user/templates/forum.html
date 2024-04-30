@@ -4,42 +4,52 @@
 {% block homeactive %} active {% endblock homeactive %}
 
 
-
 {% block body %}
 {% load static %}
 
 <!--
   where to put new reference to page stylesheet!!
   <link rel="stylesheet" href="{% static 'profile_of_user/NAME.css' %}">
+  <link rel="stylesheet" href="{% static 'profile_of_user/discussion.css' %}">
 -->
-<div class="container my-4">
-<div class="jumbotron">
+<link rel="stylesheet" href="{% static 'profile_of_user/discussion.css' %}">
+
+<div class="container my-4" id="contain">
+<div class="jumbotron" id="jumbo">
     <h1 class="display-4">PlantPals!</h1>
     <p class="lead">Welcome to our discussion forum. <br> <br> The problem of a lack of community and information in houseplant ownership affects plant owners; the impact of which is isolation and ineffective plant care that results in plants dying preventable deaths. <br> 
       Plant Pals helps plant owners grow (and not kill their plants) by providing information and a community that gives everyone a green thumb! <br> <br> Thank you and have a nice day!!</p>
     <p>You can also reply to others post by clicking on their post and replying them.</p>
       <button class="btn btn-primary btn-lg" data-target="#questions" data-toggle="modal" role="button">Add Post</button>
     </div>
+
+    <!-- Post outline -->
     {% for post in posts %}
     <div class="container-fluid mt-10">
       <div class="row">
           <div class="col-md-12">
               <div class="card mb-4">
-                  <div class="card-header">
-                      <div class="media flex-wrap w-100 align-items-center"> <img src="/media/{{post.image}}"
-                              class="d-block ui-w-40 rounded-circle" alt="">
-                          <div class="media-body ml-3"> <a href="/discussion/{{post.id}}" data-abc="true">{{post.user1}}</a>
-                          </div>
-                          <div class="text-muted small ml-3">
-                            <div class="px-4 pt-3">{{post.timestamp}} </div>
-                          </div>
-                      </div>
-                  </div>         
+
+                  <div class="card-header justify-content-between">
+                        <div class="d-flex align-items-center w-100"> 
+                                <img src="/media/{{post.image}}" class="d-block ui-w-40 rounded-circle" alt="" width="40px" height="40px">
+                            <div class="media-body ml-3"> 
+                                <a href="/discussion/{{post.id}}" data-abc="true">{{post.user1}}</a>
+                            </div>
+                        </div>
+                            <div class="text-muted small ml-3">
+                                <div class="px-4 pt-3">{{post.timestamp}} </div>
+                            </div>
+                        
+                  </div>  
+
                   <div class="card-body">
                       <p>{{post.post_content}}</p>
                   </div>
+                  
                   <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pt-0 pb-3">                  
                   </div>
+
               </div>
           </div>
       </div>

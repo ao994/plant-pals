@@ -3,13 +3,36 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Handlee&family=Sofia&display=swap');
+
 *:focus {
   outline: none;
 }
 
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #e3e3e3 ;
+}
+
+#login-box {
+   
+  position: relative;
+  margin: 5% auto;
+  width: 700px;
+  height: 500px;
+  background-color: #FFF;
+  box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.6);
+  border-radius: 17.5px;
+  border: 4px solid #ADC178;
+}
+
+
+
 .background {
   position: absolute;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
 
@@ -19,27 +42,6 @@
   filter: opacity(100%) brightness(1) blur(0.25px);
 }
 
-#login-box {
-  border-radius: 25px;
-  border: 4px solid #16a085;
-
-  position: relative;
-  margin: 5% auto;
-  width: 700px;
-  height: 500px;
-  background-color: #FFF;
-  box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.6);
-}
-
-.items {
-  position: absolute;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-  padding: 40px;
-  width: 700px;
-  height: 500px;
-}
 
 input[type="text"],
 input[type="password"] {
@@ -69,8 +71,8 @@ input[type="submit"] {
   margin-top: 28px;
   width: 120px;
   height: 32px;
-  background: #16a085;
-  border: none;
+  background-color: #ADC178;
+  border-color: white;
   border-radius: 2px;
   color: #FFF;
   font-family: "Handlee", cursive;

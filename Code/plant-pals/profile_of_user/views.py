@@ -5,6 +5,8 @@ from django.contrib.auth  import authenticate,  login, logout
 from .models import Post, Replie, Profile, DailyTask, Plant
 from .forms import ProfileForm, PlantForm
 from django.contrib.auth.decorators import login_required
+from django.db import IntegrityError
+from django.db.models import Q
 
 # for the forum page
 def forum(request):
@@ -69,10 +71,10 @@ def UserRegister(request):
         last_name = request.POST['last_name']
         password = request.POST['password']
         confirm_password = request.POST['confirm_password']
-        
+
         # keep username to less than 15 characters
-        if len(username) > 15:
-            messages.error(request, "Username must be under 15 characters.")
+        if len(username) > 20:
+            messages.error(request, "Username must be under 20 characters.")
             return redirect(registerRedirect)
         
         # keep to username to being letters/numbers
@@ -85,18 +87,25 @@ def UserRegister(request):
             messages.error(request, "Passwords do not match.")
             return redirect(registerRedirect)
         
-        # create the user
-        user = User.objects.create_user(username, email, password)
+        # check if username has been used before
+        try:
+            #create user object
+            user = User.objects.create_user(username, email, password)
 
-        # define user details
-        user.first_name = first_name
-        user.last_name = last_name
+            # define user details
+            user.first_name = first_name
+            user.last_name = last_name
 
-        # save the user details
-        user.save()
+            # save the user details
+            user.save()
 
-        # then take them to the login page
-        return render(request, login_page) 
+            # then take them to the login page
+            return render(request, login_page) 
+        
+        # if the error occurs, inform the user.
+        except IntegrityError:
+            messages.error(request, "Username already exists. Try again.")
+        
 
     # otherwise keep to page
     return render(request, register_page)
@@ -142,6 +151,7 @@ def myprofile(request):
     profile_redirect = '/myprofile'
 
     profile, created = Profile.objects.get_or_create(user=request.user)
+    current_week_tasks = []
 
     # check request type; make sure proper
     if request.method == "POST":
@@ -192,7 +202,7 @@ def myprofile(request):
     else:
         avatar_form = ProfileForm(instance=profile)
         plant_form = PlantForm(instance=profile)
-        current_week_tasks = []
+
         for day in range(7):
             task_date = calculate_task_date(day)
             daily_task, created = DailyTask.objects.get_or_create(user=request.user, task_date=task_date)
@@ -211,7 +221,7 @@ def search(request):
     #defines what happens when there is a POST request
     if request.method == "POST":
         plant = request.POST.get("q")
-        search_result = Plant.objects.filter(common_name__icontains=plant)
+        search_result = Plant.objects.filter(Q(common_name__icontains=plant) | Q(scientific_name__icontains=plant))
         return render(request, search_page, {'search_result':search_result })
 
     #defines what happens when there is a GET request
