@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-body {
-  text-align: left;
-}
-
-.result{
-  font-family: "Indie Flower", cursive;
+body{
+  font-family: "Klee One", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: large;
-    
+  text-align: left;
+  background-image: url("images/seamless_flower_opacity.png");
+  background-repeat: repeat;
+  background-position: center;
+  color: #215751;
+  }
+
+.result{
   text-align: block;
   color:#16a085;
 }
@@ -19,15 +21,21 @@ input[type="submit"] {
     margin-top: 28px;
     width: 120px;
     height: 32px;
-    background: #16a085;
-    border: none;
+    background-color: #ADC178;
+    border: 4px;
+    border-color: white;
     border-radius: 2px;
     color: #FFF;
     text-transform: uppercase;
-    transition: 0.1s ease;
     cursor: pointer;
     left:auto;
 
+  }
+
+input[type="submit"]:hover {
+    border-bottom: 2px solid #16a085;
+    background-color: #16a085;
+    transition: 0.2s ease;
   }
   
 
