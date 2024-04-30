@@ -144,24 +144,24 @@ Which buttons were difficult to find? 
 Who was interviewed and who participated: Alyssa interviewed Justin <br>
 When: 4/28/24 
 
-- What initially caught your eye upon opening the website?
-“I really like the color scheme, it was really plant-like. It gave good plant vibes.”
-- Which task did you find most difficult? Why?
-Adding a plant to the profile, it was confusing because I initially wanted to edit the large display area, and didn’t realize that I had to do it in a small thing at the top.
-- Was there any feature that you didn’t notice initially?
-No, everything was where I expected it to be.
-- What was the most difficult part of signing up?
-Thinking of a password, everything was super easy.
-- Did you have any difficulties making your profile or watering schedule?
-No, water schedule was super easy.
-- Were there any color or design choices that stood out to you? In what way?
-I really liked the plant background for all of the pages!
-- What was the best feature?
-The search worked really well.
-- What was the worst feature?
-Editing the profile, because it was not where I expected it to be.
-- Which buttons were difficult to find? 
-The discussion board, having to click directly on the name to get to the reply post area was confusing, as I assumed that it would take me directly to that persons profile page instead.
+What initially caught your eye upon opening the website?
+- “I really like the color scheme, it was really plant-like. It gave good plant vibes.”
+Which task did you find most difficult? Why?
+- Adding a plant to the profile, it was confusing because I initially wanted to edit the large display area, and didn’t realize that I had to do it in a small thing at the top.
+Was there any feature that you didn’t notice initially?
+- No, everything was where I expected it to be.
+What was the most difficult part of signing up?
+- Thinking of a password, everything was super easy.
+Did you have any difficulties making your profile or watering schedule?
+- No, water schedule was super easy.
+Were there any color or design choices that stood out to you? In what way?
+- I really liked the plant background for all of the pages!
+What was the best feature?
+- The search worked really well.
+What was the worst feature?
+- Editing the profile, because it was not where I expected it to be.
+Which buttons were difficult to find? 
+- The discussion board, having to click directly on the name to get to the reply post area was confusing, as I assumed that it would take me directly to that persons profile page instead.
 
 
 #### INTERVIEW 3: 
