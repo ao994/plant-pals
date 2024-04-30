@@ -85,6 +85,9 @@ Aside from the test case provided above, test cases for a unique username, plant
 
 ## 3\. Validation (user evaluation)
 
+#### General Introduction of us and the project:
+Hi [user], I’m interviewing you about Plant Pals which is the project that my group and I have been working on. Plant Pals is a website built for and by plant owners to make plant care easier. The point of this interview is to get a consensus about the feel and use of the website. I have a list of tasks I would like for you to attempt to carry out on the website. Please be sure to voice all of your opinions on any detail as we go through the list!
+
 #### User Tasks:
 1) Sign up for an account
 2) Add a plant (image and name)
@@ -96,33 +99,45 @@ Aside from the test case provided above, test cases for a unique username, plant
 
 #### INTERVIEW 1:
 
-Who was interviewed and who participated: _____ interviewed _____
-When: 2/2/24 
+Who was interviewed and who participated: Andy interviewed Jordan <br> 
+When: 4/28/24 
 
+What initially caught your eye upon opening the website? <br> 
 
-What initially caught your eye upon opening the website?
+- The cute earthy design caught my eye at first. <br> 
 
-Which task did you find most difficult? Why?
+Which task did you find most difficult? Why? <br> 
 
-Was there any feature that you didn’t notice initially?
+-   Most of it was pretty explanatory but id probably have to say putting the plant in. <br> 
 
+Was there any feature that you didn't notice initially? <br> 
 
-What was the most difficult part of signing up?
+-   Figuring out where to put the watering system but only because I didn't see it at the bottom. <br> 
 
+What was the most difficult part of signing up? <br> 
 
-Did you have any difficulties making your profile or watering schedule?
+-   It was pretty simple and wasn't too difficult. <br> 
 
+Did you have any difficulties making your profile or watering schedule? <br> 
 
-Was there any color or design choices that stood out to you? In what way?
+-   I did not have any difficulties making or putting in my watering schedule. <br> 
 
+Was there any color or design choices that stood out to you? In what way? <br> 
 
-What was the best feature?
+-   The whole website because it was very much earth tones and made you know it was a plant website. <br> 
 
+What was the best feature? <br> 
 
-What was the worst feature? 
+-   The questions so people could help you out if need be. <br> 
 
+ What was the worst feature? <br> 
 
-Which buttons were difficult to find? 
+-   Nothing, everything was pretty simple and easy to use.
+
+Which buttons were difficult to find? 
+
+-   All buttons were easy to find and weren't too difficult to find.
+
 
 #### INTERVIEW 2: 
 
@@ -155,32 +170,43 @@ Which buttons were difficult to find?
 
 #### INTERVIEW 3: 
 
-Who was interviewed and who participated: _____ interviewed _____
-When: 2/2/24 
+Who was interviewed and who participated: Karissa interviewed Susie <br>
+When: 4/28/24 
 
 INTERVIEW NOTES
 
 What initially caught your eye upon opening the website?
 
+-   I immediately noticed that the front page is the discussion board, which provides a description of the purpose of the discussion board, which I thought was cool. I liked that I could immediately see the thoughts of different site users. 
+
 Which task did you find most difficult? Why?
 
-Was there any feature that you didn’t notice initially?
+-   The most difficult task was entering in my user & plant information because it took me a second to understand that the corresponding images were on the bottom of the page, and I didn't realize that there were two different buttons to save your profile info & plant info, so I filled it all out, hit upload "upload avatar", and lost everything I had added for my plant & had to re-input the info. 
 
+Was there any feature that you didn't notice initially?
 
-What was the most difficult part of signing up?
+-   I didn't initially see the watering schedule
 
+ What was the most difficult part of signing up?
 
-Did you have any difficulties making your profile or watering schedule?
+-   I don't think there was anything difficult about signing up, but maybe having a homepage with a spot prompting you to sign in/sign up would help any confusion that someone may have?
 
+ Did you have any difficulties making your profile or watering schedule?
 
-Was there any color or design choices that stood out to you? In what way?
+-   The only difficulty I had was what I shared in the question above about the different buttons for the plant & personal info.
 
+Were there any color or design choices that stood out to you? In what way?
+
+-   I noticed the usage of a rose design for the sign up page, I noticed the mountains from the log-in page, which I thought was interesting for a plant website. I noticed the usage of green and brown to represent plants, and a red color for the website title in the corner as well as the usernames in the discussion forum, which helps it stand out as it is green's compliment. 
 
 What was the best feature?
 
+-   I really like the search feature, especially since I looked up more plants than just "rosemary", and they all came up and provided useful information!
 
-What was the worst feature? 
+What was the worst feature? 
 
+-   The watering schedule might be the worst feature because I think its design of it could be adjusted to become more useful, maybe making it more like a checklist so you can add more plants to the watering schedule.
 
-Which buttons were difficult to find? 
+Which buttons were difficult to find? 
 
+-   It took me a second to register that "Terra Talk" was the discussion forum, so I would say that that was the most difficult button to find.
