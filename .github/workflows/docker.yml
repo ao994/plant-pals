@@ -30,3 +30,16 @@ jobs:
           context: Code/.
           push: true
           tags: ghcr.io/ak2466/plantpals:latest
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
+          script: whoami

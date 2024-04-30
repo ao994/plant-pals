@@ -216,3 +216,8 @@ What was the worst feature? 
 Which buttons were difficult to find? 
 
 -   It took me a second to register that "Terra Talk" was the discussion forum, so I would say that that was the most difficult button to find.
+
+
+#### INTERVIEW REFLECTION:
+
+Users liked the color scheme and overall design of the website. Users found most aspects of the website, such as signing up, logging in, posting, and adding to the watering schedule to be intuitive. The most common complaints were that it was difficult to find how to add a plant to the profile, that it’s unintuitive to need to click on the name of the user to view replies, and that the watering schedule is a bit difficult to find. Users were able to complete the tasks they were assigned, and their actions produced the expected results. Users picked up the interface quickly, suggesting the site has a low learning curve, although some user interface tweaks could improve the navigation experience even more.
