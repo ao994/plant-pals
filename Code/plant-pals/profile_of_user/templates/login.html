@@ -31,8 +31,9 @@
     
 
   <div id="login-box">
-      <div class="items">
+      <div class="login-text">
         <h1>Log In</h1>
+      </div>
           <form action="/login/" method="post">
           
           <!-- security key; look up for more info -->
@@ -41,9 +42,11 @@
           <!-- first param is the type; second is the saved variable name to use in code; 
             third is the display to user 
           -->
+        <div class="login-tools">
           <input type="text" name="username" placeholder="Username" />
           <input type="password" name="password" placeholder="Password" />      
           <input type="submit" name="signup_submit" value="Log In" />
+        </div>
       </div>   
     </div>
 

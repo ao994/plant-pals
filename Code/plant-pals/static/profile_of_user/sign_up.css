@@ -8,34 +8,11 @@
 }
 
 body {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-
-  background: url("https://source.unsplash.com/random/?flower,plant,nature");
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: opacity(100%) brightness(1) blur(0.25px);
-/*
-  background: #DDD;
-  color: #222;
-*/
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #e3e3e3;
 }
-
- /* 
-.background {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  
-  background: url("images/2021-03-09-10-39-59-1800x1200.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  */
 
 
 #login-box {
@@ -49,21 +26,17 @@ body {
   border: 4px solid #ADC178;
 }
 
-.items {
+.background {
   position: absolute;
-  top: 0;
   left: 0;
-  box-sizing: border-box;
-  padding: 40px;
-  width: 700px;
-  height: 500px;
-}
+  top: 0;
+  width: 100%;
+  height: 100%;
 
-h1 {
-  margin: 0 0 20px 0;
-  font-weight: bold;
-  font-size: 28px;
-  text-align: center;
+  background: url("https://source.unsplash.com/random/?flower,plant,nature");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: opacity(100%) brightness(1) blur(0.25px);
 }
 
 input[type="text"],
