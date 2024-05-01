@@ -7,7 +7,34 @@
   outline: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
+  font-size: 16px;
+  background-color: #e3e3e3;
+}
+
+
+#login-box {
+  position: relative;
+  margin: 5% auto;
+  max-width: 90%;
+  min-height: 400px; /* Set a minimum height */
+  background-color: #FFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 17.5px;
+  border: 2px solid #ADC178;
+  padding: 40px;
+  box-sizing: border-box;
+  overflow: auto; /* Ensure content overflow is handled properly */
+}
+
+.background {
   position: absolute;
   left: 0;
   top: 0;
@@ -18,52 +45,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   filter: opacity(100%) brightness(1) blur(0.25px);
-/*
-  background: #DDD;
-  color: #222;
-*/
 }
 
- /* 
-.background {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  
-  background: url("images/2021-03-09-10-39-59-1800x1200.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  */
-
-
-#login-box {
-  position: relative;
-  margin: 5% auto;
-  width: 700px;
-  height: 500px;
-  background-color: #FFF;
-  box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.6);
-  border-radius: 17.5px;
-  border: 4px solid #ADC178;
-}
-
-.items {
-  position: absolute;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-  padding: 40px;
-  width: 700px;
-  height: 500px;
-}
-
-h1 {
-  margin: 0 0 20px 0;
-  font-weight: bold;
-  font-size: 28px;
-  text-align: center;
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  #login-box {
+    max-width: 95%;
+    margin: 10% auto;
+    padding: 20px;
+  }
 }
 
 input[type="text"],
@@ -73,7 +63,7 @@ input[type="password"] {
   box-sizing: border-box;
   margin-bottom: 20px;
   padding: 4px;
-  width: 600px;
+  width: 80%;
   height: 32px;
   border: none;
   border-bottom: 1px solid #AAA;
@@ -92,22 +82,28 @@ input[type="password"]:focus {
   transition: 0.2s ease;
 }
 
+.signup-tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
 input[type="submit"] {
-  margin-top: 28px;
-  width: 120px;
+  left: 0px;
+  width: 40%;
+  min-width: 60px;
+  max-width: 120px;
   height: 32px;
   background-color: #ADC178;
-  border-radius: 2px;
   border-color: white;
+  border-radius: 2px;
   color: #FFF;
-  font-family: "Klee One", cursive;
+  font-family: "Handlee", cursive;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
   transition: 0.1s ease;
   cursor: pointer;
-  position: relative;
-  left: 250px;
 }
 
 input[type="submit"]:hover,
