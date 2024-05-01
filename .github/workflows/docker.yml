@@ -32,6 +32,7 @@ jobs:
           tags: ghcr.io/ak2466/plantpals:latest
 
   deploy:
+    needs: build_and_publish
     runs-on: ubuntu-latest
     steps:
       -
@@ -39,7 +40,13 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
-          port: ${{ secrets.PORT }}
-          script: whoami
+          username: ${{ secrets.SERVER_USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            docker ps -aq | xargs docker stop | xargs docker rm
+            docker rmi -f $(docker images -aq)
+            service docker restart
+            docker pull ghcr.io/ak2466/plantpals:latest
+            docker run -d -p 80:80 -v ./db:/usr/src/app/db ghcr.io/ak2466/plantpals:latest
+            echo "Deployment completed."
