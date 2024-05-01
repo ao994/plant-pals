@@ -1,15 +1,1 @@
-name: Docker Build CI
 
-on:
-  push
-
-jobs:
-  build_and_publish:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Build
-        run: |
-        docker login --username ak2466 --password ${{ secrets.ACCESS_TOKEN }} ghcr.io
-        docker-compose up --build 
-        docker push ghcr.io/ak2466/plantpals:latest
