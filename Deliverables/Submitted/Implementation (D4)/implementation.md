@@ -14,7 +14,7 @@ https://github.com/ao994/plant-pals/pull/70 (formatted upload)
 	- Approved by: Alyssa Ortiz (but uploaded by Haley Berger to get all base files uploaded)
 
 Print screen:
-![alt text][story1.png]
+![alt text](story1.png)
 
 
 
