@@ -170,7 +170,7 @@ Our pipeline involves pulling the code from the launch-test branch in our GitHub
 
 
 
-## 7. Licensing (Andy)
+## 7. Licensing
 The license chosen was the MIT license. This license was chosen because it was free and it matched the needs that were required for our project/website.  
 https://github.com/ao994/plant-pals/blob/new-main/LICENSE
 
